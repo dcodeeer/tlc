@@ -1,0 +1,100 @@
+<div class='third container'>
+  <div class='block'>
+    <div class='number'>18</div>
+    <div class='text'>Years of Experience</div>
+  </div>
+  <div class='block'>
+    <div class='number'>10978</div>
+    <div class='text'>Happy Nurses</div>
+  </div>
+  <div class='block'>
+    <div class='number'>55</div>
+    <div class='text'>Awards & Recognition</div>
+  </div>
+  <div class='block'>
+    <div class='number'>20107</div>
+    <div class='text'>Trawel Contracts Completed</div>
+  </div>
+</div>
+
+<style lang='scss'>
+  .third {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 25px 0 100px 0;
+
+    .block {
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+
+      .number {
+        font-size: 32px;
+        margin-bottom: 25px;
+      }
+
+      .text {
+        font-family: 'Mulish', sans-serif;
+        font-weight: 400;
+      }
+
+      &:nth-child(-n+3) {
+        border-right: 1px solid var(--color-gray);
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(150deg, rgba(109,179,248,0.7) 0%, transparent 60%);
+        opacity: 0;
+        transition: .35s;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 15px 100px 15px;
+
+      .block {
+        padding: 30px;
+        .number {
+          font-size: 28px;
+        }
+
+        .text {
+          max-width: 80px;
+          line-height: 20px;
+        }
+        
+        &:nth-child(-n+3) {
+          border-right: none;
+        }
+
+        &:nth-child(1) {
+          border-right: 1px solid var(--color-gray);
+          border-bottom: 1px solid var(--color-gray);
+        }
+        &:nth-child(2) {
+          border-bottom: 1px solid var(--color-gray);
+        }
+        &:nth-child(3) {
+          border-right: 1px solid var(--color-gray);
+        }
+      }
+    }
+  }
+
+</style>

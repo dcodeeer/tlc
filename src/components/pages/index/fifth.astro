@@ -1,0 +1,50 @@
+<div class='fifth container'>
+  <div class='block'>
+    <div class='left'>
+      <div class='title'>Best Travel Nursing Jobs In USA</div>
+      <div class='description'>Certified by The Joint Commission</div>
+    </div>
+    <img src='/pictures/footer/img-award.png' />
+  </div>
+</div>
+
+<style lang='scss'>
+  .fifth {
+    .block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 950px;
+      margin: 80px auto;
+
+      .left {
+        .title {
+          font-size: 28px;
+        }
+      }
+    }
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    @media screen and (max-width: 480px) {
+      .block {
+        padding: 0 30px;
+        .left {
+          .title {
+            font-size: 20px;
+          }
+          .description {
+            line-height: 20px;
+          }
+        }
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+</style>

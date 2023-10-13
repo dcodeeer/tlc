@@ -1,0 +1,445 @@
+---
+import GooglePlayIcon from '../icons/play-google.astro';
+import AppStoreIcon from '../icons/apple-store.astro';
+
+import FacebookIcon from '../icons/facebook.astro';
+import InstagramIcon from '../icons/instagram.astro';
+import LinkedinIcon from '../icons/linkedin.astro';
+import TiktokIcon from '../icons/tiktok.astro';
+import TwitterIcon from '../icons/twitter.astro';
+
+---
+
+<footer>
+  <div class='footer container'>
+    <img class='logo' src='/logo.png' />
+    <div class='list'>
+      <div class='first'>
+        <div class='title'>About company</div>
+        <div class='block'>
+          <div class='little-list'>
+            <a class='link' href='#'>Contact Us</a>
+            <a class='link' href='#'>Healthcare staffing</a>
+            <a class='link' href='#'>Joint Commission</a>
+            <a class='link' href='#'>Staffing Request</a>
+            <a class='link' href='#'>Team TLC</a>
+            <a class='link' href='#'>LEAP</a>
+            <a class='link' href='#'>TLC Academy</a>
+            <a class='link' href='#'>Referral Program</a>
+            <a class='link' href='#'>Timesheet</a>
+            <a class='link' href='#'>Paycheck</a>
+          </div>
+          <div class='little-list'>
+            <a class='link' href='#'>Careers with TLC</a>
+            <a class='link' href='#'>LNP/RN Licensing</a>
+            <a class='link' href='#'>CNA/LNA Licensing</a>
+            <a class='link' href='#'>Staff testimonials</a>
+            <a class='link' href='#'>Why TLC</a>
+            <a class='link' href='#'>Benefits</a>
+            <a class='link' href='#'>Awards</a>
+            <a class='link' href='#'>Blog</a>
+            <a class='link' href='#'>FAQ</a>
+          </div>
+        </div>
+
+        <div class='follow-us'>
+          <div class='text'>Follow us</div>
+          <a class='link' href='#'><InstagramIcon /></a>
+          <a class='link' href='#'><FacebookIcon /></a>
+          <a class='link' href='#'><LinkedinIcon /></a>
+          <a class='link' href='#'><TiktokIcon /></a>
+          <a class='link' href='#'><TwitterIcon /></a>
+        </div>
+
+        <div class='markets'>
+          <a class='market' href='#'>
+            <AppStoreIcon />
+            <div class='content'>
+              <div class='text'>Download on the</div>
+              <div class='name'>App Store</div>
+            </div>
+          </a>
+          <a class='market' href='#'>
+            <GooglePlayIcon />
+            <div class='content'>
+              <div class='text'>Get it on</div>
+              <div class='name'>Google Play</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class='second'>
+        <div class='title'>Jobs</div>
+        <div class='little-list'>
+          <a class='link' href='#'>Travel Nursing Jobs by Profession</a>
+          <a class='link' href='#'>Travel Nursing Jobs by State</a>
+          <a class='link' href='#'>Travel Allied Jobs by Profession</a>
+          <a class='link' href='#'>Travel Allied Jobs by State</a>
+        </div>
+      </div>
+
+      <div class='third'>
+        <div class='head'>
+          <div class='title'>Best Travel Nursing Jobs In USA</div>
+          <div class='content'>
+            <div class='description'>Certified by The Joint Commission To Report a Concern, Click Here</div>
+            <img src='/pictures/footer/img-award.png' />
+          </div>
+        </div>
+        <div class='bot'>
+          <div class='title'>Get In Touch</div>
+          <div class='form'>
+            <div class='head'>
+              <input type='text' placeholder='First name & last name*' />
+              <input type='text' placeholder='Email*' />
+            </div>
+            <input type='text' placeholder='Speciality' />
+            <input type='text' placeholder='Message' />
+            <div class='submit'>
+              <button class='button'>Submit</button>
+              <p>* - required field</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='bottom'>
+      <div class='follow-us'>
+        <div class='text'>Follow us</div>
+        <a class='link' href='#'><InstagramIcon /></a>
+        <a class='link' href='#'><FacebookIcon /></a>
+        <a class='link' href='#'><LinkedinIcon /></a>
+        <a class='link' href='#'><TiktokIcon /></a>
+        <a class='link' href='#'><TwitterIcon /></a>
+      </div>
+
+      <div class='markets'>
+        <a class='market' href='#'>
+          <AppStoreIcon />
+          <div class='content'>
+            <div class='text'>Download on the</div>
+            <div class='name'>App Store</div>
+          </div>
+        </a>
+        <a class='market' href='#'>
+          <GooglePlayIcon />
+          <div class='content'>
+            <div class='text'>Get it on</div>
+            <div class='name'>Google Play</div>
+          </div>
+        </a>
+      </div>
+      <div class='copyright'>© 2023 TLC Nursing Associates, Inc. All Rights Reserved.</div>
+      <a class='privacy' href='#'>Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+<style lang='scss'>
+  footer {
+    .container {
+      .logo {
+        width: 165px;
+        margin-bottom: 16px;
+      }
+      .follow-us {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 25px;
+            color: var(--color-blue);
+            font-size: 20px;
+
+            a {
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          .markets {
+            display: flex;
+            gap: 16px;
+
+            .market {
+              background-color: #3F6181;
+              display: flex;
+              align-items: center;
+              padding: 12px 20px;
+              border-radius: 10px;
+              color: #fff;
+
+              svg {
+                margin-right: 10px;
+              }
+
+              .content {
+                line-height: 16px;
+              }
+
+              .text {
+                font-family: 'Mulish', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+              }
+
+              .name {
+                font-size: 20px;
+              }
+            }
+          }
+      .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        border-bottom: 1px solid var(--color-gray);
+
+        .title {
+          color: var(--color-blue);
+          font-size: 28px;
+          margin-bottom: 16px;
+        }
+        
+        .first {
+          border-right: 1px solid var(--color-gray);
+          padding-bottom: 20px;
+
+          .block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 50px;
+          }       
+        }
+
+        .second {
+          border-right: 1px solid var(--color-gray);
+        }
+
+        .third {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 10px 0 30px 0;
+          
+          .head {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+              color: var(--color-gray);
+              font-size: 20px;
+              margin-bottom: 0;
+            }
+
+            .content {
+              display: flex;
+              align-items: center;
+
+              .description {
+                font-family: 'Mulish', sans-serif;
+                font-weight: 400;
+                line-height: 24px;
+              }
+            }
+
+            img {
+              width: 74px;
+              height: 74px;
+            }
+          }
+
+          .bot {
+
+            .form {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+
+              .head {
+                display: flex;
+                gap: 15px;
+              }
+
+              .submit {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                  font-family: 'Mulish', sans-serif;
+                  font-weight: 400;
+                  margin-right: 20px;
+                }
+              }
+
+              input {
+                border: 1px solid var(--color-gray);
+                border-radius: 58px;
+                padding: 10px 20px;
+                font-family: 'Mulish', sans-serif;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+
+      .little-list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-end;
+
+        .link {
+          font-family: 'Mulish', sans-serif;
+          font-weight: 400;
+          transition: 0.35s;
+
+          &:hover {
+            color: var(--color-blue);
+          }
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 15px 0;
+        
+        .follow-us, .markets {
+          display: none;
+        }
+            
+        .copyright, .privacy {
+            font-family: 'Mulish', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+          }
+
+        .privacy {
+          color: var(--color-blue);
+          transition: 0.35s;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        .bottom {
+          display: grid;
+          grid-template-columns: 1fr;
+          
+          .copyright, .privacy {
+            font-family: 'Mulish', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+          }
+
+          .follow-us {
+            display: flex;
+            margin-bottom: 0;
+          }
+          .markets {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 25px 0;
+
+            .market {
+              .text {
+                font-size: 10px;
+              }
+              .name {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        
+        .list {
+          grid-template-columns: 1fr;
+          grid-template-areas: "second" "first" "third";
+          gap: 25px;
+
+          .title {
+            font-size: 16px;
+            margin-bottom: 5px;
+          }
+
+          .first {
+            grid-area: first;
+            border-right: none;
+            border-bottom: 1px solid var(--color-gray);
+            padding-bottom: 25px;
+
+            .block {
+              margin: 0;
+            }
+
+            .follow-us, .markets {
+              display: none;
+            }
+          }
+          .second {
+            grid-area: second;
+            border-right: none;
+            border-bottom: 1px solid var(--color-gray);
+            padding-bottom: 25px;
+          }
+          .third {
+            grid-area: third;
+            .head {
+              margin-bottom: 30px;
+
+              .title {
+                margin-bottom: 15px;
+              }
+
+              .content {
+                gap: 40px;
+
+                img {
+                  width: 58px;
+                  height: 58px;
+                }
+              }
+            }
+            .bot {
+              .title {
+                font-size: 24px;
+                margin-bottom: 15px;
+              }
+              .form {
+                .head {
+                  flex-direction: column;
+                  margin-bottom: 0;
+
+                  input {
+                    width: 100%;
+                  }
+                }
+                .submit {
+                  button {
+                    margin: 0 auto;
+                  }
+                  p {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .little-list {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+</style>

@@ -1,0 +1,207 @@
+---
+
+import IconNurse from '../../icons/icon-nurse.astro';
+import HealthIcon from '../../icons/healthicons.astro';
+import LicenseIcon from '../../icons/icon-license.astro';
+import NursingCareIcon from '../../icons/nursing-care.astro';
+import CareIcon from '../../icons/icon-care.astro';
+import NursingSvgRepoIcon from '../../icons/nursing-svg-repo.astro';
+import MedicalIcon from '../../icons/icon-medical.astro';
+import TalkingIcon from '../../icons/talking.astro';
+
+---
+
+<div class='fouth container'>
+
+  <div class='row'>
+
+    <div class='left'>
+      <div class='title'>Travel Healthcare Jobs Available For All Healthcare Professionals! Select Your Profession</div>
+      <div class='list'>
+
+        <div class='block'>
+          <IconNurse />
+          <div class='text'>Registered Nurses (RNs)</div>
+        </div>
+
+        <div class='block'>
+          <HealthIcon />
+          <div class='text'>Licensed Practicing Nurses (LPNs)</div>
+        </div>
+
+        <div class='block'>
+          <LicenseIcon />
+          <div class='text'>Certified Nurse Aides (CNAs)​</div>
+        </div>
+
+        <div class='block'>
+          <NursingCareIcon />
+          <div class='text'>Physical Therapist (PT) Occupational Therapist (OT)</div>
+        </div>
+
+        <div class='block'>
+          <CareIcon />
+          <div class='text'>Mental Health Clinicians</div>
+        </div>
+
+        <div class='block'>
+          <NursingSvgRepoIcon />
+          <div class='text'>Advanced Practice Healthcare Providers</div>
+        </div>
+
+        <div class='block'>
+          <MedicalIcon />
+          <div class='text'>Allied Healthcare Professionals-Including All Techs</div>
+        </div>
+
+        <div class='block'>
+          <TalkingIcon />
+          <div class='text'>Speech Language Pathologist (SLP)Respiratory Therapist (RT)</div>
+        </div>
+        
+      </div>
+    </div>
+
+    <img src='/pictures/main_page/fouth/img-main-2.jpeg' />
+
+  </div>
+
+  <a class='more' href='#'>All open jobs</a>
+
+</div>
+
+<style lang='scss'>
+  .fouth {
+    padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+
+    .more {
+      border: 1px solid var(--color-blue);
+      color: var(--color-blue);
+      padding: 15px 30px;
+      border-radius: 86px;
+      transition: 0.35s;
+      margin: 0 auto;
+      font-size: 20px;
+
+      &:hover {
+        background-color: var(--color-blue);
+        color: #fff;
+      }
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 70px;
+      margin-bottom: 50px;
+
+      img {
+        max-width: 460px;
+        width: 100%;
+        height: 470px;
+        object-fit: cover;
+        border-radius: 18px;
+      }
+
+      .left {
+        .title {
+          font-size: 32px;
+          line-height: normal;
+          margin-bottom: 50px;
+        }
+        .list {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-column-gap: 32px;
+          grid-row-gap: 16px;
+
+          .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 16px 16px 50px 16px;
+            position: relative;
+
+            &:nth-child(-n+4) {
+              border-bottom: 1px solid var(--color-gray);
+            }
+            &:nth-child(1)::before,
+            &:nth-child(2)::before,
+            &:nth-child(3)::before,
+            &:nth-child(5)::before,
+            &:nth-child(6)::before,
+            &:nth-child(7)::before, {
+              content: '';
+              display: block;
+              background-color: var(--color-gray);
+              width: 1px;
+              height: 130px;
+              right: -16px;
+              position: absolute;
+            }
+
+            .text {
+              font-family: Mulish;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 20px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 25px 15px;
+      .row {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        img {
+        }
+
+        .left {
+
+          .title {
+            font-size: 20px;
+            margin-bottom: 30px;
+          }
+
+          .list {
+            grid-template-columns: 1fr 1fr;
+
+            .block {
+              &:nth-child(-n+6) {
+                border-bottom: 1px solid var(--color-gray);
+              }
+              &:nth-child(1)::before,
+              &:nth-child(3)::before,
+              &:nth-child(5)::before,
+              &:nth-child(7)::before {
+                content: '';
+                display: block;
+                background-color: var(--color-gray);
+                width: 1px;
+                height: 130px;
+                right: -16px;
+                position: absolute;
+              }
+
+              &:nth-child(2)::before,
+              &:nth-child(4)::before,
+              &:nth-child(6)::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

@@ -1,0 +1,113 @@
+---
+import ArrowRight from '../../icons/arrow-right.astro';
+
+---
+
+<div class='eighth container'>
+  <div class='title'>Travel with TLC Nursing? One Click, endless possibilities!</div>
+
+  <div class='box'>
+    <img src='/pictures/main_page/eighth.jpeg' />
+    <div class='right'>
+      <div class='description'>
+        Leading the way in travel nursing, we simplify your career journey. Get top opportunities, advanced tools, and unwavering support with us. Joining TLC Nursing? 
+        <div class='bold'>Easy as ABC:</div>
+      </div>
+      <div class='list'>
+
+        <div class='item'>
+          <div class='icon'><ArrowRight /></div>
+          <div class='content'>Sign Up: Register and enrich your profile.</div>
+        </div>
+
+        <div class='item'>
+          <div class='icon'><ArrowRight /></div>
+          <div class='content'>Sign Up: Register and enrich your profile.</div>
+        </div>
+
+        <div class='item'>
+          <div class='icon'><ArrowRight /></div>
+          <div class='content'>Sign Up: Register and enrich your profile.</div>
+        </div>
+        
+      </div>
+      <a class='more' href='#'>See the difference </a>
+    </div>
+  </div>
+</div>
+
+<style lang='scss'>
+  .eighth {
+    padding: 60px 0;
+
+    .title {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+
+    .box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      img {
+        width: 660px;
+        height: 390px;
+        border-radius: 14px;
+        object-fit: cover;
+      }
+
+      .right {
+        .description {
+          font-family: 'Mulish', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 35px;
+
+          .bold {
+            font-weight: 600;
+          }
+        }
+
+        .list {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 40px;
+
+          .item {
+            display: flex;
+            align-items: center;
+
+            .icon {
+              width: 40px;
+              height: 40px;
+              margin-right: 16px;
+            }
+
+            .content {
+              font-family: 'Mulish', sans-serif;
+              font-size: 20px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    .more {
+      border: 1px solid var(--color-green);
+      color: var(--color-green);
+      padding: 15px 30px;
+      border-radius: 86px;
+      transition: 0.35s;
+      margin: 0 auto;
+      font-size: 20px;
+
+      &:hover {
+        background-color: var(--color-green);
+        color: #fff;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,247 @@
+<div class='sixth'>
+
+  <div class='head container'>
+    <div class='mini-title'>About our advantages</div>
+    <div class='title'>TLC Nursing offers the best pay package in the travel healthcare industry</div>
+    <div class='description'>Our pay package leads the industry. We'll match any competitive pay offers!</div>
+  </div>
+
+  <div class='slider' id='main_advantages_slider'>
+    
+    <div class='track'>
+
+      <div class='card'>
+        <img src='/pictures/advantages/1.png' />
+        <div class='title'>Highest pay package in the industry. We will match any compatetive pay packages</div>
+        <div class='description'>TLC Nursing offers unrivaled compensation in the travel healthcare sector.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/2.png' />
+        <div class='title'>Continuing Education available through TLC Academy</div>
+        <div class='description'>Access educational resources through the TLC Academy.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/3.png' />
+        <div class='title'>Medical / Dental / Vision Insurance after 90 days</div>
+        <div class='description'>Enjoy Medical/Dental/Vision coverage after a 90-day period.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/4.png' />
+        <div class='title'>Our staff will respect each client’s privacy</div>
+        <div class='description'>We respect our clients' privacy, offering a secure environment.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/5.png' />
+        <div class='title'>Accrued PTO (Paid Time Off) benefits</div>
+        <div class='description'>Benefit from accrued Paid Time Off.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/1.png' />
+        <div class='title'>Great Referral Bonus! Earn $500 for every new employee referral</div>
+        <div class='description'>Earn a substantial $500 bonus for each new employee referral.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/1.png' />
+        <div class='title'>Highest pay package in the industry. We will match any compatetive pay packages</div>
+        <div class='description'>TLC Nursing offers unrivaled compensation in the travel healthcare sector.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/2.png' />
+        <div class='title'>Continuing Education available through TLC Academy</div>
+        <div class='description'>Access educational resources through the TLC Academy.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/3.png' />
+        <div class='title'>Medical / Dental / Vision Insurance after 90 days</div>
+        <div class='description'>Enjoy Medical/Dental/Vision coverage after a 90-day period.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/4.png' />
+        <div class='title'>Our staff will respect each client’s privacy</div>
+        <div class='description'>We respect our clients' privacy, offering a secure environment.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/5.png' />
+        <div class='title'>Accrued PTO (Paid Time Off) benefits</div>
+        <div class='description'>Benefit from accrued Paid Time Off.</div>
+      </div>
+
+      <div class='card'>
+        <img src='/pictures/advantages/1.png' />
+        <div class='title'>Great Referral Bonus! Earn $500 for every new employee referral</div>
+        <div class='description'>Earn a substantial $500 bonus for each new employee referral.</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<style lang='scss'>
+  .sixth {
+    padding: 80px 0;
+
+    .head {
+      margin-bottom: 80px;
+
+      .mini-title {
+        display: flex;
+        align-items: center;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 400;
+
+        &::before {
+          content: '';
+          display: block;
+          background-color: var(--color-blue);
+          width: 3px;
+          height: 15px;
+          margin-right: 6px;
+        }
+      }
+
+      .title {
+        font-size: 32px;
+        line-height: normal;
+        margin: 5px 0;
+      }
+
+      .description {
+        font-family: 'Mulish', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--color-blue);
+      }
+    }
+
+    .slider {
+      overflow:hidden;
+      position: relative;
+
+      $animationSpeed: 20s;
+
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-2832px)}
+      }
+
+      .track {
+        animation: scroll $animationSpeed linear infinite;
+        width: calc((440px * 12) + (32px * 12));
+
+        display: grid;
+        grid-template-columns: 440px 440px 440px 440px 440px 440px 440px 440px 440px 440px 440px 440px;
+        gap: 32px;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: center;
+          border-radius: 20px;
+          padding: 30px;
+          width: 440px;
+          height: 400px;
+
+          img {
+            height: 154px;
+            margin-bottom: 20px;
+            margin-left: auto;
+          }
+
+          &:nth-child(1), &:nth-child(7) {
+            background-color: #EEF5FF;
+          }
+
+          &:nth-child(2), &:nth-child(8) {
+            background-color: #CCD4DF;
+          }
+          &:nth-child(2) img, &:nth-child(8) img {
+            transform: rotate(13deg);
+          }
+
+          &:nth-child(3), &:nth-child(9) {
+            background-color: #E1F9F1;
+          }
+          &:nth-child(3) img, &:nth-child(9) img {
+            transform: rotate(13deg);
+          }
+
+          &:nth-child(4), &:nth-child(10) {
+            background-color: #EEF5FF;
+          }
+
+          &:nth-child(5), &:nth-child(11) {
+            background-color: #FFF2E6;
+          }
+
+          &:nth-child(6), &:nth-child(12) {
+            background-color: #CCD4DF;
+          }
+
+          .title {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+
+          .description {
+            font-family: 'Mulish', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .head {
+        margin-bottom: 50px;
+
+        .title {
+          font-size: 20px;
+        }
+        .description {
+          font-size: 16px;
+        }
+      }
+
+      .slider {
+        .track {
+          width: calc((260px * 12) + (16px * 12));
+          grid-template-columns: 260px 260px 260px 260px 260px 260px 260px 260px 260px 260px 260px 260px;
+
+          .card {
+            width: 260px;
+            height: 370px;
+
+            img {
+              height: 120px;
+            }
+
+            .title {
+              font-size: 16px;
+              line-height: normal;
+            }
+
+            .description {
+              font-size: 15px;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

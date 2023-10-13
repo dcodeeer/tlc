@@ -1,0 +1,173 @@
+---
+import Layout from '../layouts/main.astro';
+
+import LocationIcon from '../components/icons/location.astro';
+import ChevronDown from '../components/icons/chevron_down.astro';
+import SearchIcon from '../components/icons/search.astro';
+import Cancel from '../components/icons/cancel.astro';
+
+import Second from '../components/pages/index/second.astro';
+import Third from '../components/pages/index/third.astro';
+import Fouth from '../components/pages/index/fouth.astro';
+import Fifth from '../components/pages/index/fifth.astro';
+import Sixth from '../components/pages/index/sixth.astro';
+import Seventh from '../components/pages/index/seventh.astro';
+import Eighth from '../components/pages/index/eighth.astro';
+---
+
+<Layout>
+	<div class='index-page'>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src='/pictures/main_page/0.png' />
+				</div>
+				<div class="swiper-slide">
+					<img src='/pictures/main_page/1.png' />
+				</div>
+				<div class="swiper-slide">
+					<img src='/pictures/main_page/2.png' />
+				</div>
+				<div class="swiper-slide">
+					<img src='/pictures/main_page/3.png' />
+				</div>
+				<div class="swiper-slide">
+					<img src='/pictures/main_page/4.jpeg' />
+				</div>
+			</div>
+		</div>
+		<div class='container'>
+			<div class='first'>
+				<div class='title'>Empowering Your Career, Enriching Your Journey</div>
+				<div class='description'>PREMIUM TRAVEL HEALTHCARE JOBS ACROSS USA</div>
+				<div class='form'>
+					<div class='input'>
+						<input type='text' placeholder='Profession' />
+						<ChevronDown />
+					</div>
+					<div class='input'>
+						<LocationIcon />
+						<input type='text' placeholder='Location' />
+						<ChevronDown />
+					</div>
+				</div>
+				<button class='button'>
+					<SearchIcon />
+					<span>Search Jobs</span>
+				</button>
+				<div class='clear'>
+					<span>Clear all filters</span>
+					<Cancel />
+				</div>
+			</div>
+		</div>
+		<Second />
+		<Third />
+		<Fouth />
+		<Fifth />
+		<Sixth />
+		<Seventh />
+		<Eighth />
+	</div>
+</Layout>
+
+<style lang='scss'>
+	.index-page {
+		width: 100%;
+
+		.swiper-container	 {
+			position: absolute;
+					width: 100%;
+					height: 624px;
+
+					.swiper-wrapper {
+						.swiper-slide {
+							position: relative;
+							img {
+								width: 100%;
+								height: 624px;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+
+		.container {
+			height: 624px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			.first {
+				z-index: 99;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+
+				.title {
+					max-width: 700px;
+					font-size: 40px;
+					line-height: 50px;
+					margin-bottom: 20px;
+				}
+				.description {
+					font-size: 20px;
+				}
+				.form {
+					margin: 35px 0 25px 0;
+					width: 100%;
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 10px;
+					.input {
+						display: flex;
+						align-items: center;
+						padding: 10px 20px;
+						background-color: #fff;
+						border: 1px solid rgba(114, 127, 153, 0.50);
+						border-radius: 57px;
+
+						input {
+							width: 100%;
+						}
+					}
+				}
+				.button {
+					background: #82BCFF;
+					border: 1px solid var(--color-blue);
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					padding: 16px 70px;
+					margin-bottom: 25px;
+					transition: 0.35s;
+					&:hover {
+						background: var(--color-blue);
+					}
+				}
+				.clear {
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+	}
+</style>
+
+<script is:inline>
+	const slider = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+		loop: false, // true
+		effect: 'fade',
+		speed: 500,
+		autoplay: {
+			delay: 3000,
+		},
+		allowTouchMove: false,
+	});
+
+	slider.init();
+</script>
