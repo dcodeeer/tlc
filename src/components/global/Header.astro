@@ -3,6 +3,13 @@ import UserIcon from '../icons/user.astro';
 import Burger from '../icons/burger.astro';
 import Cancel from '../icons/cancel.astro';
 import ChevronDown from '../icons/chevron_down.astro';
+import Phone from '../icons/phone.astro';
+
+import InstagramMini from '../icons/instagram-mini.astro';
+import FacebookMini from '../icons/facebook-mini.astro';
+import LinkedinMini from '../icons/linkedin-mini.astro';
+import TiktokMini from '../icons/tiktok-mini.astro';
+import TwitterMini from '../icons/twitter-mini.astro';
 ---
 
 <header>
@@ -36,6 +43,27 @@ import ChevronDown from '../icons/chevron_down.astro';
       </div>
       <div class='item'>
         <span>Careers with TLC</span>
+        <div class='details'>
+          <div class='left'>
+            <div class='title'>Careers with TLC</div>
+            <div class='list'>
+              <a href='#'>Why TLC?</a>
+              <a href='#'>Staff testimonials</a>
+              <a href='#'>Awards</a>
+              <a href='#'>Blog</a>
+              <a href='#'>FAQ</a>
+            </div>
+          </div>
+          <div class='right'>
+            <div class='box'>
+              <div class='partner'>
+                <img src='/pictures/partners/header.png' />
+                <div class='name'>Locum Tenens</div>
+              </div>
+              <p>If you are an experienced healthcare professional looking for locum tenens career opportunities, join the team of medical at TLC Locum</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class='item'>Team TLC</div>
       <div class='item'>Healthcare Staffing</div>
@@ -52,44 +80,95 @@ import ChevronDown from '../icons/chevron_down.astro';
       <div class='close' id='close'><Cancel /></div>
     </div>
     <div class='mobile-menu mobile-active'>
+
       <div class='list'>
+
         <div class='item'>
           <div class='title'>
             <a href='#'>Discover TLC</a>
-            <ChevronDown />
+            <button class='header-mobile-chevron'><ChevronDown /></button>
           </div>
 
           <div class='list'>
             <a href='#'>Why TLC?</a>
-            <a href='#'>Why TLC?</a>
-            <a href='#'>Why TLC?</a>
+            <a href='#'>Staff testimonials</a>
+            <a href='#'>Awards</a>
+            <a href='#'>Blog</a>
+            <a href='#'>FAQ</a>
           </div>
         </div>
+
         <div class='item'>
           <div class='title'>
-            <a href='#'>Discover TLC</a>
-            <ChevronDown />
+            <a href='#'>Careers with TLC</a>
+            <button class='header-mobile-chevron'><ChevronDown /></button>
           </div>
 
           <div class='list'>
-            <a href='#'>Why TLC?</a>
-            <a href='#'>Why TLC?</a>
-            <a href='#'>Why TLC?</a>
+            <a href='#'>Search Jobs</a>
+            <a href='#'>CNA/LNA Licensing</a>
+            <a href='#'>LNP/RN Licensing</a>
+            <a href='#'>Staff testimonials</a>
+            <a href='#'>Benefits</a>
           </div>
         </div>
+
         <div class='item'>
           <div class='title'>
-            <a href='#'>Discover TLC</a>
-            <ChevronDown />
+            <a href='#'>Healthcare staffing</a>
+            <button class='header-mobile-chevron'><ChevronDown /></button>
           </div>
 
           <div class='list'>
-            <a href='#'>Why TLC?</a>
-            <a href='#'>Why TLC?</a>
-            <a href='#'>Why TLC?</a>
+            <a href='#'>Joint Commission</a>
+            <a href='#'>Staffing Request</a>
           </div>
+        </div>
+
+        <div class='item'>
+          <div class='title'>
+            <a href='#'>Team TLC</a>
+            <button class='header-mobile-chevron'><ChevronDown /></button>
+          </div>
+
+          <div class='list'>
+            <a href='#'>LEAP</a>
+            <a href='#'>Timesheet</a>
+            <a href='#'>TLC Academy</a>
+            <a href='#'>Paycheck</a>
+            <a href='#'>Referral Program</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='partner'>
+        <img src='/pictures/partners/header.png' />
+        <div class='name'>Locum Tenens</div>
+      </div>
+      
+      <a class='search' href='#'>Search Jobs</a>
+
+      <div class='number-and-social'>
+        <div class='number'>
+          <Phone />
+          <span>802-404-0123</span>
+        </div>
+        <div class='socials'>
+          <span>Follow Us</span>
+          <a href='#'><InstagramMini /></a>
+          <a href='#'><FacebookMini /></a>
+          <a href='#'><LinkedinMini /></a>
+          <a href='#'><TiktokMini /></a>
+          <a href='#'><TwitterMini /></a>
         </div>
       </div>
+
+      <div class='mail'>
+        <span class='title'>EMAIL</span>
+        <span class='email'>Info@TLCNursing.Com</span>
+      </div>
+
     </div>
   </div>
 </header>
@@ -97,7 +176,7 @@ import ChevronDown from '../icons/chevron_down.astro';
 <style lang='scss'>
 header {
   width: 100%;
-  height: 220px;
+  height: 180px;
   display: flex;
   align-items: center;
 
@@ -106,6 +185,7 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    
 
     .logo {
       height: 100%;
@@ -116,7 +196,6 @@ header {
       gap: 30px;
 
       .item {
-        cursor: pointer;
         transition: 0.35s;
 
         &:hover .details {
@@ -124,15 +203,20 @@ header {
           opacity: 1;
         }
 
+        span {
+          cursor: pointer;
+        }
+
         .details {
           z-index: 999;
           background-color: #fff;
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.03), 0px 1.22393px 11.42331px 0px rgba(0,0,0,0.03), 0px 5.30368px 21.21471px 0px rgba(0,0,0,0.02), 0px 11.83128px 29.37422px 0px rgba(0,0,0,0.02), 0px 21.21471px 34.26992px 0px rgba(0,0,0,0.01), 0px 33.65796px 37.53373px 0px rgba(0,0,0,0);
           border-radius: 25px;
           margin-top: 25px;
           width: 1070px;
           height: 260px;
           position: fixed;
+          left: 50vh;
           display: grid;
           grid-template-columns: 1fr 2fr;
           transition: 0.35s;
@@ -253,23 +337,83 @@ header {
       opacity: 0;
       visibility: hidden;
       overflow-x: auto;
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-bottom: 20px;
+
+      .partner {
+        display: grid;
+        grid-template-columns: 115px 1fr;
+        align-items: flex-end;
+        gap: 35px;
+        margin-bottom: 35px;
+
+        img {
+          width: 115px;
+        }
+
+        .name {
+          font-size: 20px;
+        }
+      }
+
+      .number-and-social {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        margin-bottom: 15px;
+
+        .number {
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-left: 5px;
+          }
+        }
+
+        .socials {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+
+          a {
+            height: 18px;
+            &:nth-child(5), &:nth-child(6) {
+              height: 16px;
+            }
+          }
+        }
+      }
+
+      .mail {
+        .title {
+          margin-right: 16px;
+        }
+        .email {
+          font-family: 'Mulish';
+          font-weight: 400;
+        }
+      }
+
+      .search {
+        display: flex;
+        margin-bottom: 30px;
+      }
 
       .list {
-        padding: 10px 20px 0 20px;
+        width: 100%;
+        margin-bottom: 50px;
         .item {
-          padding: 5px 20px;
+          padding: 10px;
+          border-bottom: 1px solid #EDF3FF;
 
           .title {
             display: flex;
+            align-items: center;
             justify-content: space-between;
-          }
-
-          &:hover .list {
-            max-height: 1000px;
-            transition: max-height 2s;
-          }
-          &:hover:active .list {
-            max-height: 0;
           }
 
           .list {
@@ -279,6 +423,14 @@ header {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s;
+            padding: 0 15px;
+            margin-bottom: 0;
+
+            a {
+              &:nth-child(1) {
+                margin-top: 5px;
+              }
+            }
           }
           .list-active {
             max-height: 1000px;
@@ -353,4 +505,30 @@ header {
   burger.addEventListener('click', openListener);
 
   // menu end
+
+  // mobile chevron
+
+  const chevroneListener = (e) => {
+    console.log(e.target.tagName);
+    var list = e.target.parentNode.parentNode.parentNode.querySelector('.list');
+    if (e.target.tagName == 'svg') {
+      list = e.target.parentNode.parentNode.parentNode.querySelector('.list');
+    } else if (e.target.tagName == 'path') {
+      list = e.target.parentNode.parentNode.parentNode.parentNode.querySelector('.list');
+    } else if (e.target.tagName == 'button') {
+      list = e.target.parentNode.parentNode.querySelector('.list');
+    }
+
+    if (list.classList.contains('list-active')) {
+        list.classList.remove('list-active');
+      } else {
+        list.classList.add('list-active');
+      }
+  };
+
+  const chevrones = document.querySelectorAll('.header-mobile-chevron');
+  chevrones.forEach(chevrone => {
+    chevrone.addEventListener('click', chevroneListener);
+  });
+
 </script>

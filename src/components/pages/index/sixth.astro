@@ -218,9 +218,15 @@
       }
 
       .slider {
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-1656px)}
+        }
+        
         .track {
           width: calc((260px * 12) + (16px * 12));
           grid-template-columns: 260px 260px 260px 260px 260px 260px 260px 260px 260px 260px 260px 260px;
+          gap: 16px;
 
           .card {
             width: 260px;

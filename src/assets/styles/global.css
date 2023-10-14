@@ -15,14 +15,18 @@ a {
   text-decoration: none;
 }
 button, input {
-  background-color: none;
+  background-color: transparent;
   border: none;
   outline: none;
   font-family: 'Montserrat';
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 130%;
+  line-height: 20px;
+  color: var(--color-gray);
+}
+button {
+  cursor: pointer;
 }
 body {
   color: var(--color-text);
@@ -30,7 +34,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 1.8em;
+  line-height: 21px;
 }
 
 .container {

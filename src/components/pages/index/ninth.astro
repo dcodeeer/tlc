@@ -1,0 +1,244 @@
+---
+import SliderNext from '../../icons/slider-next.astro';
+import SliderPrev from '../../icons/slider-prev.astro';
+
+---
+
+<div class='ninth'>
+  <div class='container'>
+
+    <div class='title'>Choose where you want to go next job trip</div>
+    
+
+    <div class='slider-wrapper'>
+
+      <div class='slider' id='main-ninth-slider'>
+        <div class='swiper-wrapper'>
+
+          <div class='card swiper-slide'>
+            <img src='/pictures/main_page/ninth/new-york.png' />
+            <div class='bottom'>
+              <div class='name'>New York</div>
+              <div class='count'>50 vacancies</div>
+            </div>
+          </div>
+
+          <div class='card swiper-slide'>
+            <img src='/pictures/main_page/ninth/new-york.png' />
+            <div class='bottom'>
+              <div class='name'>New York</div>
+              <div class='count'>50 vacancies</div>
+            </div>
+          </div>
+
+          <div class='card swiper-slide'>
+            <img src='/pictures/main_page/ninth/new-york.png' />
+            <div class='bottom'>
+              <div class='name'>New York</div>
+              <div class='count'>50 vacancies</div>
+            </div>
+          </div>
+
+          <div class='card swiper-slide'>
+            <img src='/pictures/main_page/ninth/new-york.png' />
+            <div class='bottom'>
+              <div class='name'>New York</div>
+              <div class='count'>50 vacancies</div>
+            </div>
+          </div>
+
+          <div class='card swiper-slide'>
+            <img src='/pictures/main_page/ninth/new-york.png' />
+            <div class='bottom'>
+              <div class='name'>New York</div>
+              <div class='count'>50 vacancies</div>
+            </div>
+          </div>
+
+          <div class='card swiper-slide'>
+            <img src='/pictures/main_page/ninth/new-york.png' />
+            <div class='bottom'>
+              <div class='name'>New York</div>
+              <div class='count'>50 vacancies</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class='buttons'>
+        <button id='main-ninth-prev'><SliderPrev /></button>
+        <button id='main-ninth-next'><SliderNext /></button>
+      </div>
+
+    </div>
+
+    <a class='more' href='#'>Search travel jobs</a>
+  </div>
+</div>
+
+<style lang='scss'>
+  .ninth {
+    background-color: #F6F7F9;
+    padding: 90px 0;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      position: relative;
+
+      .title {
+        font-size: 40px;
+        line-height: normal;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+
+      #main-ninth-next {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -80px;
+      }
+
+      #main-ninth-prev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -80px;
+      }
+
+        
+      .slider-wrapper {
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+      }
+
+      .slider {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .swiper-wrapper {
+
+          .card {
+            width: 316px;
+
+            img {
+              display: block;
+              border-radius: 18px 18px 0px 0px;
+              width: 100%;
+              height: 155px;
+              object-fit: cover;
+            }
+
+            .bottom {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 24px 16px;
+              border: 1px solid var(--color-gray);
+              border-top: none;
+              border-radius: 0 0 19px 19px;
+              
+              .name {
+                font-size: 20px;
+                border-left: 4px solid var(--color-gray);
+                padding: 5px 0 5px 10px;
+              }
+
+              .count {
+                font-family: 'Mulish';
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+
+      .more {
+        background-color: var(--color-blue);
+        border: 1px solid transparent;
+        padding: 15px 30px;
+        color: #fff;
+        border-radius: 50px;
+        margin: 0 auto;
+        transition: 0.35s;
+
+        &:hover {
+          background-color: #90C3FF;
+        }
+
+        &:active {
+          background-color: #90C3FF;
+          border: 1px solid var(--color-blue);
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 20px 15px;
+
+      .container {
+        .title {
+          font-size: 20px;
+          margin-bottom: 24px;
+        }
+
+        .swiper-button-disabled {
+          fill: aqua;
+        }
+
+        .slider-wrapper {
+          margin-bottom: 24px;
+          
+          .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding-top: 24px;
+          }
+          #main-ninth-next {
+            position: inherit;
+            right: 0;
+          }
+
+          #main-ninth-prev {
+            position: inherit;
+            left: 0;
+          }
+          .card {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+</style>
+
+<script is:inline>
+
+  const ninthSlider = new Swiper('#main-ninth-slider', {
+    navigation: {
+      nextEl: '#main-ninth-next',
+      prevEl: '#main-ninth-prev',
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+        spaceBetweenSlides: 50
+      },
+      481: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      }
+    }
+  });
+
+  ninthSlider.init();
+
+</script>
