@@ -47,27 +47,52 @@ import TwitterMini from '../icons/twitter-mini.astro';
           <div class='left'>
             <div class='title'>Careers with TLC</div>
             <div class='list'>
-              <a href='#'>Why TLC?</a>
+              <a href='#'>Search Jobs</a>
+              <a href='#'>CNA/LNA Licensing</a>
+              <a href='#'>LNP/RN Licensing</a>
               <a href='#'>Staff testimonials</a>
-              <a href='#'>Awards</a>
-              <a href='#'>Blog</a>
-              <a href='#'>FAQ</a>
+              <a href='#'>Benefits</a>
             </div>
           </div>
           <div class='right'>
-            <div class='box'>
-              <div class='partner'>
-                <img src='/pictures/partners/header.png' />
-                <div class='name'>Locum Tenens</div>
-              </div>
-              <p>If you are an experienced healthcare professional looking for locum tenens career opportunities, join the team of medical at TLC Locum</p>
-            </div>
+            <p>TLC Nursing’s team is dedicated to providing our clients with the right people through our extensive screening process to meet your unique staffing needs. We provide passionate and committed staff while creating a culture of caring and professional development.</p>  
           </div>
         </div>
       </div>
-      <div class='item'>Team TLC</div>
-      <div class='item'>Healthcare Staffing</div>
-      <div class='item'>Contact Us</div>
+      <div class='item'>
+        <span>Team TLC</span>
+        <div class='details'>
+          <div class='left'>
+            <div class='title'>Team TLC</div>
+            <div class='list'>
+              <a href='#'>LEAP</a>
+              <a href='#'>Timesheet</a>
+              <a href='#'>TLC Academy</a>
+              <a href='#'>Paycheck</a>
+              <a href='#'>Referral Program</a>
+            </div>
+          </div>
+          <div class='right'>
+            <p>TLC Nursing’s team is dedicated to providing our clients with the right people through our extensive screening process to meet your unique staffing needs. We provide passionate and committed staff while creating a culture of caring and professional development.</p>  
+          </div>
+        </div>
+      </div>
+      <div class='item'>
+        <span>Healthcare Staffing</span>
+        <div class='details'>
+          <div class='left'>
+            <div class='title'>Healthcare staffing</div>
+            <div class='list'>
+              <a href='#'>Joint Commission</a>
+              <a href='#'>Staffing Request</a>
+            </div>
+          </div>
+          <div class='right'>
+            <p>TLC Nursing Associates, Inc. provides non-exclusive contracts giving you the flexibility to hire who you need when you need them. Our pool of over 300 qualified healthcare professionals come with a wide range of experiences in many different settings which allows us to meet the demand for quality care in our region.</p>  
+          </div>
+        </div>
+      </div>
+      <a href='#' class='item'>Contact Us</a>
     </nav>
 
     <UserIcon />
@@ -140,6 +165,13 @@ import TwitterMini from '../icons/twitter-mini.astro';
           </div>
         </div>
 
+        <div class='item'>
+          <div class='title'>
+            <a href='#'>Contact</a>
+            <button class='header-mobile-chevron'><ChevronDown /></button>
+          </div>
+        </div>
+
       </div>
 
       <div class='partner'>
@@ -176,7 +208,7 @@ import TwitterMini from '../icons/twitter-mini.astro';
 <style lang='scss'>
 header {
   width: 100%;
-  height: 180px;
+  height: 220px;
   display: flex;
   align-items: center;
 
@@ -216,9 +248,11 @@ header {
           width: 1070px;
           height: 260px;
           position: fixed;
-          left: 50vh;
+          left: 0;
+          right: 0;
+          margin: 25px auto;
           display: grid;
-          grid-template-columns: 1fr 2fr;
+          grid-template-columns: 404px 1fr;
           transition: 0.35s;
           visibility: hidden;
           opacity: 0;
@@ -229,13 +263,13 @@ header {
             align-items: center;
             justify-content: center;
             .title {
-              width: 200px;
+              width: 300px;
               font-size: 28px;
               color: var(--color-blue);
               margin-bottom: 16px;
             }
             .list {
-              width: 200px;
+              width: 300px;
               display: flex;
               flex-direction: column;
               gap: 5px;

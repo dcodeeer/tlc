@@ -1,0 +1,35 @@
+#main-first-slider-pagination {
+  display: flex;
+  align-items: center;
+  
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    transition: 0.15s;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+#main-tenth-pagination {
+  display: flex;
+  align-items: center;
+  height: 15px;
+  
+  .swiper-pagination-bullet {
+    background-color: #999;
+    width: 10px;
+    height: 10px;
+    transition: 0.15s;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--color-blue);
+    width: 15px;
+    height: 15px;
+  }
+}

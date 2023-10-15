@@ -1,0 +1,56 @@
+<div class='twelfth container'>
+  <div class='title'>FOLLOW ON INSTAGRAM</div>
+  <div class='list'>
+    <img src='/pictures/main_page/twelfth/1.png' />
+    <img src='/pictures/main_page/twelfth/2.png' />
+    <img src='/pictures/main_page/twelfth/3.jpeg' />
+    <img src='/pictures/main_page/twelfth/4.png' />
+    <img src='/pictures/main_page/twelfth/5.png' />
+  </div>
+</div>
+
+<style lang='scss'>
+  .twelfth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 70px 0;
+
+    .title {
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-align: center;
+      line-height: normal;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 30px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 40px 15px 70px 15px;
+
+      .title {
+        font-size: 20px;
+      }
+      .list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+
+        img {
+          &:nth-child(5) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+</style>
