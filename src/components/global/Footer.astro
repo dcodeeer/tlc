@@ -53,18 +53,10 @@ import TwitterIcon from '../icons/twitter.astro';
 
         <div class='markets'>
           <a class='market' href='#'>
-            <AppStoreIcon />
-            <div class='content'>
-              <div class='text'>Download on the</div>
-              <div class='name'>App Store</div>
-            </div>
+            <img src='/pictures/footer/apple.png' />
           </a>
           <a class='market' href='#'>
-            <GooglePlayIcon />
-            <div class='content'>
-              <div class='text'>Get it on</div>
-              <div class='name'>Google Play</div>
-            </div>
+            <img src='/pictures/footer/google.png' />
           </a>
         </div>
       </div>
@@ -117,20 +109,13 @@ import TwitterIcon from '../icons/twitter.astro';
 
       <div class='markets'>
         <a class='market' href='#'>
-          <AppStoreIcon />
-          <div class='content'>
-            <div class='text'>Download on the</div>
-            <div class='name'>App Store</div>
-          </div>
+          <img src='/pictures/footer/apple.png' />
         </a>
         <a class='market' href='#'>
-          <GooglePlayIcon />
-          <div class='content'>
-            <div class='text'>Get it on</div>
-            <div class='name'>Google Play</div>
-          </div>
+          <img src='/pictures/footer/google.png' />
         </a>
       </div>
+
       <div class='copyright'>© 2023 TLC Nursing Associates, Inc. All Rights Reserved.</div>
       <a class='privacy' href='#'>Privacy policy</a>
     </div>
@@ -162,33 +147,18 @@ import TwitterIcon from '../icons/twitter.astro';
           }
 
           .markets {
-            display: flex;
+            display: grid;
+            grid-template-columns: 174px 186px;
+            grid-template-rows: 58px;
+
             gap: 16px;
 
             .market {
-              background-color: #3F6181;
-              display: flex;
-              align-items: center;
-              padding: 12px 20px;
-              border-radius: 10px;
-              color: #fff;
-
-              svg {
-                margin-right: 10px;
-              }
-
-              .content {
-                line-height: 16px;
-              }
-
-              .text {
-                font-family: 'Mulish', sans-serif;
-                font-size: 12px;
-                font-weight: 400;
-              }
-
-              .name {
-                font-size: 20px;
+              
+              img {
+                width: 100%;
+              height: 100%;
+                object-fit: cover;
               }
             }
           }
@@ -354,11 +324,8 @@ import TwitterIcon from '../icons/twitter.astro';
             margin: 25px 0;
 
             .market {
-              .text {
-                font-size: 10px;
-              }
-              .name {
-                font-size: 15px;
+              img {
+                width: 100%;
               }
             }
           }
