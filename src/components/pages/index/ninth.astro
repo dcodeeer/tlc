@@ -80,7 +80,7 @@ import SliderPrev from '../../icons/slider-prev.astro';
 <style lang='scss'>
   .ninth {
     background-color: #F6F7F9;
-    padding: 90px 0;
+    padding: 90px 15px;
 
     .container {
       display: flex;
@@ -217,6 +217,16 @@ import SliderPrev from '../../icons/slider-prev.astro';
         }
       }
     }
+
+    @media screen and (max-width: 912px) {
+      .container {
+        .slider-wrapper {
+          .buttons {
+            display: none;
+          }
+        }
+      }
+    }
   }
 </style>
 
@@ -233,6 +243,10 @@ import SliderPrev from '../../icons/slider-prev.astro';
         spaceBetweenSlides: 50
       },
       481: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      912: {
         slidesPerView: 4,
         spaceBetween: 30,
       }

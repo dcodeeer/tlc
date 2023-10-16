@@ -95,7 +95,9 @@ import TwitterMini from '../icons/twitter-mini.astro';
       <a href='#' class='item'>Contact Us</a>
     </nav>
 
-    <UserIcon />
+    <a class='user' href='#'>
+      <img src='/pictures/header/user.png' />
+    </a>
     
     <a class='search' href='#'>Search Jobs</a>
     <a class='signup' href='#'>Sign Up</a>
@@ -474,7 +476,7 @@ header {
     }
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 912px) {
     box-sizing: border-box;
     height: 89px;
     padding: 0 16px;
@@ -482,12 +484,19 @@ header {
     .container {
       align-items: center;
 
+      display: grid;
+      grid-template-columns: 1fr auto auto auto;
+      gap: 10px;
+
       .logo {
         width: 104px;
         height: 39px;
       }
       nav, .search {
         display: none;
+      }
+      .signup {
+        padding: 17px;
       }
       .mobile-icon {
         display: block;
