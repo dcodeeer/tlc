@@ -12,6 +12,8 @@ import SliderPrev from '../../icons/slider-prev.astro';
 
     <div class='slider-wrapper'>
 
+      <button class='arrow' id='main-ninth-prev'><SliderPrev /></button>
+
       <div class='slider' id='main-ninth-slider'>
         <div class='swiper-wrapper'>
 
@@ -66,6 +68,8 @@ import SliderPrev from '../../icons/slider-prev.astro';
         </div>
       </div>
 
+      <button class='arrow' id='main-ninth-next'><SliderNext /></button>
+
       <div class='buttons'>
         <button id='main-ninth-prev'><SliderPrev /></button>
         <button id='main-ninth-next'><SliderNext /></button>
@@ -83,6 +87,7 @@ import SliderPrev from '../../icons/slider-prev.astro';
     padding: 90px 15px;
 
     .container {
+      max-width: 1350px + 180px;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -97,17 +102,9 @@ import SliderPrev from '../../icons/slider-prev.astro';
       }
 
       #main-ninth-next {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: -80px;
       }
 
       #main-ninth-prev {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: -80px;
       }
 
         
@@ -115,6 +112,13 @@ import SliderPrev from '../../icons/slider-prev.astro';
         width: 100%;
         position: relative;
         margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .buttons {
+          display: none;
+        }
       }
 
       .slider {
@@ -194,23 +198,6 @@ import SliderPrev from '../../icons/slider-prev.astro';
 
         .slider-wrapper {
           margin-bottom: 24px;
-          
-          .buttons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            padding-top: 24px;
-          }
-          #main-ninth-next {
-            position: inherit;
-            right: 0;
-          }
-
-          #main-ninth-prev {
-            position: inherit;
-            left: 0;
-          }
           .card {
             padding: 5px;
           }
@@ -221,8 +208,16 @@ import SliderPrev from '../../icons/slider-prev.astro';
     @media screen and (max-width: 912px) {
       .container {
         .slider-wrapper {
-          .buttons {
+          flex-direction: column;
+          .arrow {
             display: none;
+          }
+          .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding-top: 24px;
           }
         }
       }
