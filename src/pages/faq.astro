@@ -1,0 +1,250 @@
+---
+import WorkUs from '../components/global/work-us.astro';
+import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
+import ChevronDown from '../components/icons/chevron_down.astro';
+import Layout from '../layouts/main.astro';
+
+
+---
+
+<Layout>
+  <div class='faq-page'>
+
+    <div class='header'>
+
+      <div class='page-info'>
+        <div class='text'>
+          <span>Discover TLC</span>
+          <ChevronRightMini />
+          <span>FAQ</span>
+        </div>
+      </div>
+
+      <div class='slider' id='faq-page-slider'>
+        <div class='swiper-wrapper'>
+          <div class='swiper-slide'><img src='/pictures/main_page/0.png' /></div>
+          <div class='swiper-slide'><img src='/pictures/main_page/1.png' /></div>
+          <div class='swiper-slide'><img src='/pictures/main_page/2.png' /></div>
+          <div class='swiper-slide'><img src='/pictures/main_page/3.png' /></div>
+          <div class='swiper-slide'><img src='/pictures/main_page/4.png' /></div>
+          <div class='swiper-slide'><img src='/pictures/main_page/5.jpeg' /></div>
+        </div>
+        <div class='swiper-pagination' id='faq-page-slider-pagination'></div>
+      </div>
+
+    </div>
+
+    <div class='content container'>
+      <div class='title'>More Questions? Contact Us Today</div>
+
+      <div class='list'>
+
+        <div class='accordion'>
+          <div class='accordion-content'>
+            <div class='number'>1.</div>
+            <div class='information'>
+              <div class='name'>Do I have to be licensed/certified in the state of the assignment to work there?</div>
+              <div class='description '>
+                <p>Yes, you do. The application process for most states is fairly simple and straightforward – you can easily search for and find the information for a particular state online.</p>
+              </div>
+            </div>
+          </div>
+          <button class='faq-page-accordion' data-page='faq-page'>
+            <div class='icon'><ChevronDown /></div>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class='bottom'>
+      <WorkUs />
+    </div>
+
+  </div>
+</Layout>
+
+<style lang='scss'>
+  .faq-page {
+    background-color: #F6F7F9;
+
+    .header {
+      .slider {
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+        position: relative;
+
+        .swiper-slide {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .content {
+      padding-top: 100px;
+      padding-bottom: 60px;
+
+      .title {
+        font-size: 40px;
+        line-height: normal;
+        margin-bottom: 70px;
+        color: var(--color-blue);
+      }
+
+      .list {
+        margin-bottom: 64px;
+
+        .accordion {
+          display: grid;
+          grid-template-columns: 1fr 58px;
+
+          .accordion-content {
+            background-color: #fff;
+            padding: 18px 34px;
+            border-radius: 14px 0 0 14px;
+            display: flex;
+
+            .number {
+              font-size: 20px;
+              line-height: normal;
+              margin-right: 10px;
+            }
+
+            .information {
+              .name {
+                font-size: 20px;
+                line-height: normal;
+              }
+
+              .description {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.35s ease-out;
+
+                p {
+                  font-family: 'Mulish';
+                  font-weight: 400;
+                  padding: 16px 0;
+                }
+              }
+
+              .active {
+                max-height: 300px;
+              }
+            }
+          }
+
+          .faq-page-accordion {
+            background-color: #E4E3E3;
+            border-radius: 0 14px 14px 0;
+            color: #606C77;
+            transition: 0.35s;
+
+            .icon {
+              height: 24px;
+              transition: 0.35s;
+            }
+          }
+          .faq-page-accordion-active {
+            background-color: var(--color-blue);
+            color: #fff;
+
+            .icon {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      background-color: #fff;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @media screen and (max-width: 912px) {
+      .header {
+        .slider {
+          height: 440px;
+
+          .swiper-slide {
+            img {
+              object-position: 70%;
+            }
+          }
+        }
+      }
+      .content {
+        padding-top: 28px;
+        padding-bottom: 48px;
+
+        .title {
+          font-size: 28px;
+          margin-bottom: 32px;
+        }
+
+        .list {
+          .accordion {
+            display: grid;
+            grid-template-columns: 1fr 58px;
+
+            .accordion-content {
+              .number {
+                font-size: 16px;
+                margin-right: 6px;
+              }
+
+              .information {
+                .name {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+</style>
+
+<script is:inline>
+  const faqPageAccordianListener = (e) => {
+    e.currentTarget.classList.toggle('faq-page-accordion-active');
+
+    const content = e.currentTarget.previousElementSibling.querySelector('.description');
+
+    content.classList.toggle('active');
+  };
+  
+  const faqPageAccordian = document.querySelectorAll('.faq-page-accordion[data-page="faq-page"]');
+
+  faqPageAccordian[0].addEventListener('click', faqPageAccordianListener);
+
+
+  // slider
+
+  const faqPageSlider = new Swiper('#faq-page-slider', {
+		slidesPerView: 1,
+    pagination: {
+      el: '#faq-page-slider-pagination',
+      clickable: true,
+    },
+		loop: false, // true
+		effect: 'fade',
+		speed: 500,
+		autoplay: {
+			delay: 3000,
+		},
+		allowTouchMove: false,
+	});
+
+	faqPageSlider.init();
+</script>

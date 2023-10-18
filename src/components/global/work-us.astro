@@ -1,0 +1,66 @@
+<div class='work-us-card container'>
+  <img src='/pictures/faq/1.jpeg' />
+
+  <div class='card-content'>
+    <div class='card-title'>Let’s start work with Us!</div>
+    <div class='card-description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    <a class='card-button button'>Search Job</a>
+  </div>
+</div>
+
+<style lang='scss'>
+.work-us-card {
+  background-color: #F6F7F9;
+  border-radius: 14px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    .card-title {
+      font-size: 32px;
+      line-height: normal;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      max-width: 390px;
+      font-family: 'Mulish';
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    .card-content {
+      padding: 32px;
+
+      .card-title {
+        font-size: 20px;
+      }
+
+      .card-description {
+        font-size: 15px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+</style>
