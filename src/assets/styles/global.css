@@ -55,6 +55,30 @@ body {
 }
 
 
+.page-info {
+  background: rgba(255, 255, 255, 0.49);
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  padding: 10px 15px;
+
+  .text {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-family: 'Mulish';
+    font-weight: 400;
+
+    color: var(--color-gray);
+  }
+}
+
+
 
 @media screen and (max-width: 912px) {
   .container {

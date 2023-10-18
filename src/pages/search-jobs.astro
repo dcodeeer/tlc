@@ -7,12 +7,24 @@ import Search from '../components/icons/search.astro';
 import Cancel from '../components/icons/cancel.astro';
 import Clock from '../components/icons/clock.astro';
 import ChevronRight from '../components/icons/chevron_right.astro';
+import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
+import ChevronLeftPagination from '../components/icons/chevron-left-pagination.astro';
+import ChevronRightPagination from '../components/icons/chevron-right-pagination.astro';
 ---
 
 <Layout>
   <div class='search-jobs-page'>
 
     <div class='header'>
+      <div class='page-info'>
+        <div class='text'>
+          <span>Discover TLC</span>
+          <ChevronRightMini />
+          <span>Careers with TLC</span>
+          <ChevronRightMini />
+          <span>Search Jobs</span>
+        </div>
+      </div>
       <div class='container'>
         <div class='title'>Join the TLC Nursing Family!</div>
         <div class='description'>TLC Nursing offers an unparalleled opportunity to elevate your healthcare career under the guidance and leadership of a Registered Nurse.  With us, you are not just part of a team, but a member of the TLC Nursing family.</div>
@@ -315,6 +327,17 @@ import ChevronRight from '../components/icons/chevron_right.astro';
           </div>
         </div>
 
+        <div class='pagination'>
+          <div class='wrapper'>
+            <div class='item'><ChevronLeftPagination /></div>
+            <div class='item active'>1</div>
+            <div class='item'>2</div>
+            <div class='item'>...</div>
+            <div class='item'>8</div>
+            <div class='item'><ChevronRightPagination /></div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -329,7 +352,10 @@ import ChevronRight from '../components/icons/chevron_right.astro';
     .header {
       background-color: #EEF5FF;
       color: var(--color-blue);
-      padding: 70px 0;
+
+      .container {
+        padding: 70px 0;
+      }
 
       .title {
         font-size: 40px;
@@ -341,6 +367,7 @@ import ChevronRight from '../components/icons/chevron_right.astro';
         font-family: 'Mulish';
         font-weight: 400;
         font-size: 20px;
+        line-height: 26px;
       }
     }
 
@@ -632,6 +659,41 @@ import ChevronRight from '../components/icons/chevron_right.astro';
                 }
               }
             }
+          }
+        }
+
+        .pagination {
+          display: flex;
+          align-items: center;
+          padding-top: 42px;
+
+          .wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0 auto;
+          }
+
+          .item {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:first-child {
+              border: 1px solid #E4E3E3;
+              border-radius: 100%;
+            }
+            &:last-child {
+              border: 1px solid #E4E3E3;
+              border-radius: 100%;
+            }
+          }
+
+          .active {
+            border-radius: 24px;
+            background: #EEF5FF;
           }
         }
       }
