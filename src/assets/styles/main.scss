@@ -19,6 +19,7 @@
 #main-tenth-pagination {
   display: flex;
   align-items: center;
+  gap: 20px;
   height: 15px;
   
   .swiper-pagination-bullet {
@@ -46,6 +47,7 @@
     height: 10px;
     transition: 0.15s;
     opacity: 0.5;
+    margin: 0 10px;
   }
   .swiper-pagination-bullet-active {
     background-color: #fff;
