@@ -33,3 +33,24 @@
     height: 15px;
   }
 }
+
+#faq-page-slider-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 30px;
+  
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    transition: 0.15s;
+    opacity: 0.5;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+  }
+}
