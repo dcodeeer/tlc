@@ -1,0 +1,178 @@
+---
+import Layout from '../layouts/main.astro';
+---
+
+<Layout>
+  <div class='staffing-request'>
+
+    <div class='header'>
+      <img src='/pictures/staffing-request/1.png' />
+    </div>
+
+    <div class='content container'>
+
+        <div class='form'>
+
+          <div class='title'>Staffing Request Form</div>
+          
+          <input type='text' placeholder='First name & last name*' />
+          <input type='text' placeholder='Email*' />
+          <input type='text' placeholder='Phone' />
+          <input type='text' placeholder='Best time to reach You' />
+
+          <div class='bottom'>
+            <button>Submit</button>
+            <p>* - required field <br />& Get approved in 24 Hours!</p>
+          </div>
+
+        </div>
+
+        <div class='box'>
+
+          <div class='title'>Need a Vacancy Filled?</div>
+
+          <p>We Have Qualified Candidates Ready to Join Your Team. Our dedicated staff members are standing by to help meet your needs. </p>
+
+          <p>Call us at 1-888-414-0703 or fill out the form below and one of our experts will reach out to you to help match you with the best candidates. </p>
+
+          <div class='mini-title'>We look forward to making your hiring process a breeze!</div>
+
+        </div>
+
+    </div>
+
+  </div>
+</Layout>
+
+<style lang='scss'>
+  .staffing-request {
+
+    .header {
+      width: 100%;
+      height: 500px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 40px;
+      padding-bottom: 80px;
+      position: relative;
+
+      .form {
+        max-width: 550px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 18px;
+        position: absolute;
+        margin-top: -250px;
+        right: 0;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 1.22393px 11.42331px 0px rgba(0, 0, 0, 0.05), 0px 5.30368px 21.21471px 0px rgba(0, 0, 0, 0.04), 0px 11.83128px 29.37422px 0px rgba(0, 0, 0, 0.03), 0px 21.21471px 34.26992px 0px rgba(0, 0, 0, 0.01), 0px 33.65796px 37.53373px 0px rgba(0, 0, 0, 0.00);
+        padding: 65px 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .title {
+          font-size: 32px;
+          line-height: normal;
+          margin-bottom: 16px;
+        }
+
+        input {
+          border-radius: 58px;
+          border: 1px solid rgba(114, 127, 153, 0.60);
+          padding: 10px 20px;
+          font-family: 'Mulish';
+          font-weight: 400;
+        }
+
+        .bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 16px;
+
+          button {
+            background-color: var(--color-green);
+            border-radius: 27px;
+            color: #fff;
+            padding: 12px 60px;
+          }
+
+          p {
+            font-family: 'Mulish';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        
+        .title {
+          font-size: 28px;
+          line-height: normal;
+          color: var(--color-blue);
+        }
+
+        .mini-title {
+          font-size: 20px;
+          line-height: normal;
+          color: var(--color-blue);
+        }
+
+        p {
+          font-family: 'Mulish';
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .content {
+        grid-template-columns: 1fr;
+        padding-bottom: 40px;
+
+        .form {
+          position: relative;
+          left: 0;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 30px;
+
+          .title {
+            font-size: 20px;
+          }
+
+          .bottom {
+            flex-direction: column;
+            align-items: start;
+            gap: 16px;
+          }
+        }
+
+        .box {
+          position: relative;
+
+          .title {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+</style>
