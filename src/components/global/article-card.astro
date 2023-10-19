@@ -1,0 +1,55 @@
+<div class='article-card-component'>
+  <img src='/pictures/article.jpeg' />
+  <div class='content'>
+    <div class='tag'>Travel</div>
+    <a class='name H4' href='#'>OSHA: Occupational Safety & Health Administration by Alan Sousie, RN MEd</a>
+    <div class='bottom body-3'>
+      <div class='author'>Alexandra Cushman</div>
+      <div class='right'>
+        <span>13/01/2023</span>
+        <span>10:00 AM</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style lang='scss'>
+.article-card-component {
+  background-color: #EEF5FF;
+  border-radius: 10px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    
+    padding: 16px 22px;
+
+    .tag {
+      background-color: var(--color-blue);
+      color: #fff;
+      padding: 5px 18px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    .bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .right {
+        display: flex;
+        gap: 16px;
+      }
+    }
+  }
+}
+</style>

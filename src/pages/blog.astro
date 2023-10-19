@@ -1,0 +1,139 @@
+---
+import Layout from '../layouts/main.astro';
+import ArticleCard from '../components/global/article-card.astro';
+
+import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
+import Search from '../components/icons/search.astro';
+import ChevronLeftPagination from '../components/icons/chevron-left-pagination.astro';
+import ChevronRightPagination from '../components/icons/chevron-right-pagination.astro';
+---
+
+<Layout>
+  <div class='blog-page'>
+
+    <div class='page-info'>
+      <div class='text'>
+        <span>Discover TLC</span>
+        <ChevronRightMini />
+        <span>Blog</span>
+      </div>
+    </div>
+  
+    <div class='header'>
+      <div class='container'>
+        <div class='title H1'>Discover Valuable Travel Nursing Tips With Our Blog Search</div>
+        <div class='description body-1'>Explore the TLC Nursing’s blog to stay up-to-date on the latest news, tips, and insights related to travel nursing.</div>
+        <div class='form'>
+          <input type='text' placeholder='Search for articles' />
+          <button>
+            <div class='icon'><Search /></div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class='box container'>
+      <div class='title H1'>All Articles</div>
+      <div class='list'>
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+      </div>
+      <div class='page-pagination'>
+        <div class='wrapper'>
+          <div class='item'><ChevronLeftPagination /></div>
+          <div class='item active'>1</div>
+          <div class='item'>2</div>
+          <div class='item'>...</div>
+          <div class='item'>8</div>
+          <div class='item'><ChevronRightPagination /></div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</Layout>
+
+<style lang='scss'>
+.blog-page {
+  
+  .header {
+    background-color: #EEF5FF;
+    padding: 70px 0 100px 0;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .title, .description {
+        color: var(--color-blue);
+      }
+
+      .form {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+
+        input  {
+          width: 100%;
+          padding: 15px 30px;
+        }
+
+        button {
+          background-color: #E4E3E3;
+          width: 60px;
+          height: 60px;
+
+          .icon {
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .box {
+    padding: 70px 0;
+
+    .title {
+      margin-bottom: 40px;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .header {
+      text-align: center;
+      padding: 70px 0 40px 0;
+      .container {
+        .title {
+          font-size: 28px;
+        }
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .box {
+      padding: 40px 0;
+
+      .title {
+        font-size: 28px;
+      }
+    }
+  }
+}
+</style>
