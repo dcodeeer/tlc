@@ -1,0 +1,471 @@
+---
+import Layout from "../layouts/main.astro";
+import ChevronRightMini from "../components/icons/chevron-right-mini.astro";
+import WorkUs from "../components/global/work-us.astro";
+---
+
+<Layout>
+  <div class="referal">
+    <div class="page-info">
+      <div class="text">
+        <span>Discover TLC</span>
+        <ChevronRightMini />
+        <span>Team TLC</span>
+        <ChevronRightMini />
+        <span>Referral program</span>
+      </div>
+    </div>
+    <div class="main_banner">
+      <h1>IT PAYS TO HAVE FRIENDS</h1>
+    </div>
+    <section>
+      <div class="container">
+        <h3>
+          Do you know a healthcare professional who might be a good fit for TLC
+          Nursing?
+        </h3>
+        <p>
+          Send them our way, and we’ll pay you a referral bonus after your
+          referral is hired and works the required hours with TLC Nursing!
+        </p>
+      </div>
+    </section>
+    <section class="bg-blue">
+      <div class="container">
+        <div class="content">
+          <div class="left">
+            <h4>Bonus Amounts by Position</h4>
+            <p>
+              With our referral program, ambassadors (YOU) and applicants earn a
+              bonus.
+            </p>
+
+            <ul>
+              <li>
+                <p>
+                  <b>CNA/LNA/MHT/BHT/RA/PCA</b> - $150 Ambassador / $100 for
+                  Applicants
+                </p>
+              </li>
+              <li>
+                <p><b>LPN/LVN</b> - $300 Ambassador / $200 Applicants</p>
+              </li>
+              <li>
+                <p><b>RN</b> - $500 Ambassador / $250 Applicants</p>
+              </li>
+              <li>
+                <p><b>MD</b> - $1000 Ambassador / $500 Applicants</p>
+              </li>
+            </ul>
+
+            <h4>Referral Bonus Qualifications</h4>
+            <ul>
+              <li>
+                <p>
+                  The TLC Nursing Referral Bonus Program is effective February
+                  1, 2023. All referrals submitted on or after this date are
+                  eligible for the referral bonus.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The person referred must be hired by TLC Nursing and work 520
+                  hours for contract positions and 90 days for direct-hire roles
+                  to receive the referral bonus.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Active TLC Nursing employees and non-employees can participate
+                  in our bonus program.
+                </p>
+              </li>
+              <li>
+                <p>Unlimited referral bonuses are allowed per Ambassador.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <h4>Legal Policy</h4>
+            <p>
+              To qualify for the TLC Nursing Associates, Inc Referral Bonus
+              Program, you can only refer a listed position for temporary
+              staffing services or for permanent placement services.
+            </p>
+            <p>
+              Your referral(s) must be new and cannot have previously worked for
+              TLC Nursing Associates, Inc; Your referral(s) must be hired by TLC
+              Nursing and work a minimum of 520 hours for contract roles or
+              90-days for direct hire management/non-management roles to receive
+              your referral bonus; Referral bonuses will be paid one time per
+              referral; This program excludes any TLC Nursing Associates, Inc.
+              employee whose work responsibilities include recruitment, hiring,
+              or selection of new employees; Each referral is subject to a
+              one-time payment, and the referred-candidate may not be referred
+              an additional instance; Payment will be made directly to the
+              employee’s currently indicated method of payment; Referral
+              requests must be done on your own time and not as a part of your
+              regular work duties; This program is strictly voluntary, and there
+              is no obligation to participate or refer any candidate to the
+              referral program; Referral program may be canceled at any time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form_program">
+      <div class="container">
+        <div class="form">
+          <h3>
+            Join TLC Nursing Associates's Refer-a-Friend Program and Earn Up To
+            up to $1,000
+          </h3>
+          <p>
+            Fill out the form below to refer your friend and start earning
+            rewards
+          </p>
+
+          <fieldset>
+            <h5>About your friend</h5>
+
+            <div class="field">
+              <label for="">First name</label>
+              <input type="text" placeholder="John" />
+            </div>
+            <div class="field">
+              <label for="">First name</label>
+              <input type="text" placeholder="John" />
+            </div>
+            <div class="field">
+              <label for="">Email</label>
+              <input type="text" placeholder="Email" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <h5>About you</h5>
+
+            <div class="field">
+              <label for="">First name</label>
+              <input type="text" placeholder="John" />
+            </div>
+            <div class="field">
+              <label for="">First name</label>
+              <input type="text" placeholder="John" />
+            </div>
+            <div class="field">
+              <label for="">Email</label>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="field">
+              <label for="">Phone</label>
+              <input type="text" placeholder="(xxx) xxx xxxx" />
+            </div>
+            <div class="field">
+              <label for="">Select Your Recruiter</label>
+              <input type="text" placeholder="Not sure/Don't know" />
+            </div>
+          </fieldset>
+
+          <div class="action">
+            <button type="submit">Refer Your Friend</button>
+            <a href="#">View referral program details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <WorkUs />
+    </section>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .main_banner {
+    height: 250px;
+    background-color: #eef5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center;
+      color: var(--color-blue);
+    }
+  }
+
+  section {
+    margin: 48px 0;
+
+    h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: var(--color-blue);
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-family: "Mulish", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+    }
+  }
+
+  .bg-blue {
+    background-color: #eef5ff;
+    padding: 62px 0;
+
+    .content {
+      display: flex;
+      gap: 50px;
+      h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: var(--color-blue);
+        margin-bottom: 12px;
+      }
+
+      p {
+        margin-bottom: 16px;
+        font-family: "Mulish", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0 0 30px;
+        padding: 0;
+
+        li {
+          font-family: "Mulish", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%;
+          color: var(--color-gray);
+          margin-bottom: 5px;
+          position: relative;
+          display: flex;
+          gap: 16px;
+          &::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            border-radius: 16px;
+            background-color: var(--color-gray);
+            display: block;
+            transform: translateY(2px);
+          }
+
+          p {
+            width: calc(100% - 16px);
+            margin-bottom: 0;
+          }
+        }
+      }
+      .left,
+      .right {
+        width: 50%;
+      }
+    }
+  }
+
+  .form_program {
+    margin: 54px 0 40px;
+    .container {
+      padding: 54px 0 39px;
+      border-radius: 18px;
+      box-shadow:
+        0px 0px 0px 0px rgba(0, 0, 0, 0.05),
+        0px 1.22393px 11.42331px 0px rgba(0, 0, 0, 0.05),
+        0px 5.30368px 21.21471px 0px rgba(0, 0, 0, 0.04),
+        0px 11.83128px 29.37422px 0px rgba(0, 0, 0, 0.03),
+        0px 21.21471px 34.26992px 0px rgba(0, 0, 0, 0.01),
+        0px 33.65796px 37.53373px 0px rgba(0, 0, 0, 0);
+    }
+
+    h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center;
+      margin-bottom: 8px;
+      color: var(--color-blue);
+    }
+    p {
+      font-family: "Mulish", sans-serif;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      margin-bottom: 32px;
+    }
+
+    fieldset {
+      max-width: 660px;
+      widows: 100%;
+      margin: 0 auto;
+      margin-bottom: 32px;
+      border: none;
+
+      h5 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        color: var(--color-blue);
+        line-height: 130%;
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 7px;
+        label {
+          font-family: "Mulish", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%;
+        }
+
+        input {
+          height: 40px;
+          padding: 0 20px;
+          font-family: "Mulish", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%;
+          border-radius: 58px;
+          border: 1px solid var(--color-gray);
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+
+      button {
+        border-radius: 27px;
+        background: var(--color-green);
+        padding: 12px 30px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        color: #fff;
+      }
+
+      a {
+        font-family: "Mulish", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        &:hover {
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+
+  .work {
+    margin-bottom: 64px;
+  }
+
+  @media screen and (max-width: 580px) {
+    .main_banner {
+      height: 290px;
+      padding: 0 15px 55px 15px;
+      align-items: flex-end;
+
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+    }
+
+    section {
+      margin: 15px 0;
+
+      h3 {
+        font-size: 28px;
+      }
+    }
+
+    .bg-blue {
+      padding: 31px 0;
+
+      .content {
+        flex-direction: column;
+        gap: 40px;
+
+        .left,
+        .right {
+          width: 100%;
+        }
+
+        ul {
+          li {
+            &::before {
+              width: 10px;
+              height: 10px;
+              border-radius: 10px;
+              transform: translateY(6px);
+            }
+          }
+        }
+      }
+    }
+
+    .form_program {
+      .container {
+        padding: 30px;
+
+        h3 {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+
+        .fieldset {
+          .field {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+</style>
