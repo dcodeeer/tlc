@@ -1,0 +1,152 @@
+---
+import Layout from "../layouts/main.astro";
+import ChevronRightMini from "../components/icons/chevron-right-mini.astro";
+import Search from "../components/icons/search.astro";
+import ChevronDown from "../components/icons/chevron_down.astro";
+import Letters from "../components/pages/states/Letters.jsx";
+import States from "../components/pages/states/States.jsx";
+import ChevronLeftPagination from "../components/icons/chevron-left-pagination.astro";
+import ChevronRightPagination from "../components/icons/chevron-right-pagination.astro";
+---
+
+<Layout>
+  <div class="alphabet">
+    <div class="page-info">
+      <div class="text">
+        <span>Discover TLC</span>
+        <ChevronRightMini />
+        <span>Travel Allied Jobs by State</span>
+      </div>
+    </div>
+    <div class="main_banner">
+      <div class="container">
+        <h1>Join the TLC Nursing Family!</h1>
+        <div class="form">
+          <input type="text" placeholder="Location..." />
+          <button class="search-button"><Search /></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="inside_wrap">
+        <Letters />
+        <States />
+        <div class="pagination">
+          <div class="wrapper">
+            <div class="item"><ChevronLeftPagination /></div>
+            <div class="item active">1</div>
+            <div class="item">2</div>
+            <div class="item">...</div>
+            <div class="item">8</div>
+            <div class="item"><ChevronRightPagination /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .main_banner {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: #eef5ff;
+    padding: 0 20px 111px 20px;
+    h1 {
+      font-size: 40px;
+      margin: 0 0 19px;
+      text-align: left;
+      font-weight: 600;
+      line-height: normal;
+      color: var(--color-blue);
+    }
+  }
+  .form {
+    background-color: #fff;
+    border-radius: 10px;
+
+    color: var(--color-gray);
+
+    display: grid;
+    grid-template-columns: 1fr 60px;
+
+    input {
+      width: 100%;
+      padding: 20px 26px;
+    }
+
+    .select {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid #e4e3e3;
+    }
+
+    .search-button {
+      background-color: #e4e3e3;
+      border-radius: 0 10px 10px 0;
+      color: var(--color-gray);
+    }
+  }
+
+  .inside_wrap {
+    margin: 32px 0 66px;
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 auto;
+    }
+
+    .item {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:first-child {
+        border: 1px solid #e4e3e3;
+        border-radius: 100%;
+      }
+      &:last-child {
+        border: 1px solid #e4e3e3;
+        border-radius: 100%;
+      }
+    }
+
+    .active {
+      border-radius: 24px;
+      background: #eef5ff;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .main_banner {
+      height: 250px;
+      padding: 0 0 58px 0;
+
+      h1 {
+        font-size: 28px;
+        text-align: center;
+        margin: 0 0 16px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+    }
+  }
+</style>
