@@ -1,0 +1,33 @@
+---
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+
+---
+
+<div class='career-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Why TLC?</span>
+    </div>
+  </div>
+
+  <img src='/pictures/career/1.jpeg' />
+</div>
+
+<style lang='scss'>
+.career-first {
+  width: 100%;
+  height: 500px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 340px;
+  }
+}
+</style>

@@ -1,0 +1,217 @@
+---
+import Star from '../../icons/star.astro';
+
+---
+
+<div class='career-fourth'>
+  <div class='container'>
+    <div class='title H1'>What our employees have to say</div>
+
+    <div class='slider' id='career-page-slider'>
+
+      <div class='swiper-wrapper'>
+
+        <div class='swiper-slide'>
+          <div class='top'>
+            <img src='/pictures/career/fourth.png' />
+            <div class='info'>
+              <div class='name'>David Weegar</div>
+              <div class='from'>LPN Chicago, IL</div>
+              <div class='bot'>
+                <div class='score'>
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                </div>
+                <div class='date'>2/17/2023</div>
+              </div>
+            </div>
+            
+          </div>
+          <div class='bottom body-2'>“Being an ‘agency’ nurse can be intimidating at times; 15 minutes of orientation and you are expected to jump right in. What I liked most about TLC was the availability of Abi, Mohammed and Roz. If I ever had a question about an assignment they were a phone call away 24/7! I never felt like I was alone at a new facility even if I was physically alone. Not to mention the money is outstanding! TLC is by far the best company I have worked for in my 9 years as a nurse. If I move back to Vermont in the future I will certainly give them a call.”</div>
+        </div>
+
+        <div class='swiper-slide'>
+          <div class='top'>
+            <img src='/pictures/career/fourth.png' />
+            <div class='info'>
+              <div class='name'>David Weegar</div>
+              <div class='from'>LPN Chicago, IL</div>
+              <div class='bot'>
+                <div class='score'>
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                </div>
+                <div class='date'>2/17/2023</div>
+              </div>
+            </div>
+            
+          </div>
+          <div class='bottom body-2'>“Being an ‘agency’ nurse can be intimidating at times; 15 minutes of orientation and you are expected to jump right in. What I liked most about TLC was the availability of Abi, Mohammed and Roz. If I ever had a question about an assignment they were a phone call away 24/7! I never felt like I was alone at a new facility even if I was physically alone. Not to mention the money is outstanding! TLC is by far the best company I have worked for in my 9 years as a nurse. If I move back to Vermont in the future I will certainly give them a call.”</div>
+        </div>
+
+        <div class='swiper-slide'>
+          <div class='top'>
+            <img src='/pictures/career/fourth.png' />
+            <div class='info'>
+              <div class='name'>David Weegar</div>
+              <div class='from'>LPN Chicago, IL</div>
+              <div class='bot'>
+                <div class='score'>
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                </div>
+                <div class='date'>2/17/2023</div>
+              </div>
+            </div>
+            
+          </div>
+          <div class='bottom body-2'>“Being an ‘agency’ nurse can be intimidating at times; 15 minutes of orientation and you are expected to jump right in. What I liked most about TLC was the availability of Abi, Mohammed and Roz. If I ever had a question about an assignment they were a phone call away 24/7! I never felt like I was alone at a new facility even if I was physically alone. Not to mention the money is outstanding! TLC is by far the best company I have worked for in my 9 years as a nurse. If I move back to Vermont in the future I will certainly give them a call.”</div>
+        </div>
+
+        <div class='swiper-slide'>
+          <div class='top'>
+            <img src='/pictures/career/fourth.png' />
+            <div class='info'>
+              <div class='name'>David Weegar</div>
+              <div class='from'>LPN Chicago, IL</div>
+              <div class='bot'>
+                <div class='score'>
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                </div>
+                <div class='date'>2/17/2023</div>
+              </div>
+            </div>
+            
+          </div>
+          <div class='bottom body-2'>“Being an ‘agency’ nurse can be intimidating at times; 15 minutes of orientation and you are expected to jump right in. What I liked most about TLC was the availability of Abi, Mohammed and Roz. If I ever had a question about an assignment they were a phone call away 24/7! I never felt like I was alone at a new facility even if I was physically alone. Not to mention the money is outstanding! TLC is by far the best company I have worked for in my 9 years as a nurse. If I move back to Vermont in the future I will certainly give them a call.”</div>
+        </div>
+
+      </div>
+
+      <div class='pagination' id='career-page-slider-pagination'></div>
+
+    </div>
+  </div>
+</div>
+
+<style lang='scss'>
+.career-fourth {
+  background-color: #EEF5FF;
+  padding: 70px 0;
+
+  .container {
+    .title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+
+      .pagination {
+        justify-content: center;
+      }
+
+      .swiper-wrapper {
+        margin-bottom: 50px;
+
+        .swiper-slide {
+          padding: 40px 30px;
+          background-color: #fff;
+          border-radius: 16px;
+
+          .top {
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 32px;
+
+            img {
+              width: 70px;
+              height: 70px;
+            }
+
+            .info {
+              font-family: 'Archivo', sans-serif;
+              line-height: 20px;
+
+              display: flex;
+              flex-direction: column;
+
+              height: 100%;
+
+              .name {
+
+              }
+              .from {
+                font-weight: 400;
+                font-size: 14px;
+              }
+              .score {
+                height: 20px;
+              }
+              .bot {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 400;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 40px 0;
+    
+    .container {
+      .title {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+</style>
+
+<script is:inline>
+  const careerPageSlider = new Swiper('#career-page-slider', {
+    pagination: {
+      el: '#career-page-slider-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      1100: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+    },
+	});
+
+	careerPageSlider.init();
+</script>

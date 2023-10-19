@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/main.astro';
+
+import First from '../components/pages/career/first.astro';
+import Second from '../components/pages/career/second.astro';
+import Third from '../components/pages/career/third.astro';
+import Fourth from '../components/pages/career/fourth.astro';
+import Fifth from '../components/pages/career/fifth.astro';
+import Sixth from '../components/pages/career/sixth.astro';
+import Seventh from '../components/pages/career/seventh.astro';
+import WorkUs from '../components/global/work-us.astro';
+---
+
+<Layout>
+  <div class='career'>
+    <First />
+    <Second />
+    <Third />
+    <Fourth />
+    <Fifth />
+    <Sixth />
+    <Seventh />
+    <div class='last'>
+      <WorkUs />
+    </div>
+  </div>
+</Layout>
+
+<style lang='scss'>
+.career {
+  background-color: #fff;
+
+  .last {
+    padding: 64px 0;
+  }
+}
+</style>

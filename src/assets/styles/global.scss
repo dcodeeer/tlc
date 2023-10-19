@@ -44,6 +44,69 @@ body {
 }
 
 
+/* text */
+
+.H0 {
+  font-family: 'Montserrat';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.H1 {
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.H2 {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.H3 {
+  font-family: 'Montserrat';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.H4 {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.H5 {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.body-1 {
+  font-family: 'Mulish';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.body-2 {
+  font-family: 'Mulish';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* text end */
+
+/* button */
 
 .button {
   background-color: var(--color-blue);
@@ -64,6 +127,24 @@ body {
     border: 1px solid var(--color-blue);
   }
 }
+
+.button-6 {
+  border: 1px solid var(--color-green);
+  border-radius: 86px;
+  color: var(--color-green);
+  padding: 15px 35px;
+  transition: 0.35s;
+
+  &:hover {
+    background-color: rgba(21, 209, 153, 0.15);
+  }
+
+  &:active {
+    border: 1px solid var(--Hover-filed-green, rgba(21, 209, 153, 0.15));
+  }
+}
+
+/* button end */
 
 
 .page-info {
@@ -93,6 +174,6 @@ body {
 
 @media screen and (max-width: 912px) {
   .container {
-    padding: 0 15px;
+    // padding: 0 15px;
   }
 }

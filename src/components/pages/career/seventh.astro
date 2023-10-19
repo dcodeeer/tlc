@@ -1,0 +1,114 @@
+<div class='career-seventh container'>
+  <div class='left'>
+    <div class='title H1'>So Why Travel with TLC?</div>
+
+    <div class='content'>
+      <div class='H4'>Are you a caring, accomplished Nurse (RN / LPN) or a Nurse’s Aid (LNA /CAN) looking to work in the New England Area? We hope you'll consider us.</div>
+
+      <div class='H4'>What we offer:</div>
+      <ul class='list body-2'>
+        <li>We love education: Paid orientation, continuing ed, and skills training.</li>
+        <li>We've got your back: 24/7 access to a nurse for support.</li>
+        <li>We care about YOUR health: Medical, dental, vision, and AFLAC benefits when you work at least 30 hours a week. Also, paid time off!</li>
+        <li>We can be flexible with your start date and your schedule needs.</li>
+      </ul>
+
+      <div class='H4'>Important requirements:</div>
+      <ul class='list body-2'>
+        <li>We love education: Paid orientation, continuing ed, and skills training.</li>
+        <li>We've got your back: 24/7 access to a nurse for support.</li>
+        <li>We care about YOUR health: Medical, dental, vision, and AFLAC benefits when you work at least 30 hours a week. Also, paid time off!</li>
+        <li>We can be flexible with your start date and your schedule needs.</li>
+      </ul>
+
+      <div class='H4'>Please chat, email, or call us to get your travel nursing journey started now!</div>
+
+    </div>
+
+  </div>
+
+  <img src='/pictures/career/seventh.jpeg' />
+</div>
+
+<style lang='scss'>
+.career-seventh {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  padding: 86px 0 124px 0;
+
+  img {
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .left {
+    .title {
+      color: var(--color-blue);
+      margin-bottom: 32px;
+    }
+    
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 24px;
+
+      .H4 {
+        &:not(:first-child) {
+          color: var(--color-blue);
+        }
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+
+        list-style-type: none;
+
+        li {
+          display: grid;
+          grid-template-columns: 10px 1fr;
+          gap: 16px;
+          
+          &::before {
+            background-color: var(--color-gray);
+            opacity: 0.6;
+            content: '';
+            display: block;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin: 6px 10px 6px 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 40px 0;
+
+    .left {
+
+      .title {
+        font-size: 32px;
+        margin-bottom: 24px;
+      }
+
+      .content {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+</style>

@@ -1,0 +1,81 @@
+<div class='career-third container'>
+  <div class='left'>
+    <div class='title H1'>So Why Travel with TLC?</div>
+    <div class='content'>
+      <p>Talk about the scenic route to career development!</p>
+      <p>Our traveling opportunities give you the chance to see the country and practice nursing in your choice of different locations and clinical settings. Traveling is also the perfect way to expand your skills and experience new treatment perspectives. You´ll receive a great income, a full benefits package, and plenty of extras like paid travel, free housing, and a variety of incentive and bonus programs. Best of all, traveling affords you the luxury of a completely flexible schedule.  </p>
+      <p>Plus, each opportunity will be fully presented to you in advance, so you can choose to accept it or not. </p>
+      <p>Plus, each opportunity will be fully presented to you in advance, so you can choose to accept it or not. We make sure all the details relating to your assignments are carefully presented upfront and follow up to see that every detail is covered and every promise is kept. Still, coordinating the logistics of your assignments is just one aspect of the complete service we provide. As you work with us, you´ll find that we truly are concerned with your personal satisfaction and will go the extra mile to make sure you have what you need to make your traveling experience rewarding.</p>
+      <p>Where would you like to travel? Call, Text, Chat, or e-mail today and let us know when you would like to get started.</p>
+    </div>
+    
+  </div>
+  <img src='/pictures/main_page/luisiana.jpeg' />
+</div>
+
+<style lang='scss'>
+.career-third {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  padding: 80px 0;
+
+  img {
+    max-width: 660px;
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  .left {
+
+    .title {
+      color: var(--color-blue);
+      margin-bottom: 32px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      font-family: Mulish;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      
+      p {
+        &:nth-child(odd) {
+          color: var(--color-blue);
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+
+    padding: 24px 0;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 440px;
+    }
+
+    .left {
+
+      .title {
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+</style>
