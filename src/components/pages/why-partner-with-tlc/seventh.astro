@@ -1,0 +1,80 @@
+<div class='why-partner-with-tlc-seventh'>
+  <div class='container'>
+    
+    <div class='left'>
+      <div class='title H2 blue'>Contract Staffing Services</div>
+      <p class='body-2'>Contract Staffing allows you to be free of the stress of hiring. Allowing TLC to act as your recruiter streamlines your hiring process and ensures only the best candidates have been vetted for your convenience and peace of mind. Our highly trained recruiters take personal pride in finding only the best candidates to represent TLC’s high standard of care. As your healthcare medical staffing and recruitment services agency, TLC allows you to:</p>
+      <div class='content'>
+        <ul class='list body-2'>
+          <li>Hire on demand</li>
+          <li>Pay by the hour</li>
+          <li>Anticipate seasonal needs</li>
+          <li>Save on specialized skills</li>
+          <li>Grow your staff on a temporary basis for unexpected times of growth</li>
+          <li>Choose from a selection of pre-screened, highly qualified candidates</li>
+        </ul>
+      </div>    
+    </div>
+  
+    <img src='/pictures/why-partner-with-tlc/7.png' />
+  
+  </div>
+</div>
+
+<style lang='scss'>
+.why-partner-with-tlc-seventh {
+  background-color: #EEF5FF;
+  padding: 100px 0;
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 430px;
+    gap: 30px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      .blue {
+        color: var(--color-blue);
+      }
+      .content {
+        .list {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          list-style-type: none;
+
+          li {
+            display: grid;
+            grid-template-columns: 10px 1fr;
+            gap: 16px;
+
+            &::before {
+              background-color: var(--color-gray);
+              opacity: 0.6;
+              content: '';
+              display: block;
+              position: relative;
+              width: 10px;
+              height: 10px;
+              border-radius: 100%;
+              margin: 6px 10px 6px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    padding: 40px 0;
+
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+</style>

@@ -1,0 +1,127 @@
+---
+import Heal from '../../icons/heal.astro';
+import Medical from '../../icons/medical.astro';
+import Hospital from '../../icons/hospital.astro';
+import Award from '../../icons/award.astro';
+import Check from '../../icons/check.astro';
+
+---
+
+<div class='why-partner-with-tlc-fourth container'>
+  <div class='left'>
+    <img src='/pictures/career/mohamed.jpg' />
+    <div class='info H5'>Mohamed Basha, RN CMC Founder And CEO</div>
+  </div>
+  <div class='right'>
+    <div class='title H2'>Our Promise to You</div>
+    
+    <div class='list'>
+
+      <div class='block'>
+        <div class='icon'><Medical /></div>
+        <div class='text body-1'>Our staff will treat each client with respect and dignity.</div>
+      </div>
+
+      <div class='block'>
+        <div class='icon'><Heal /></div>
+        <div class='text body-1'>Our staff will give care you can count on.</div>
+      </div>
+
+      <div class='block'>
+        <div class='icon'><Hospital /></div>
+        <div class='text body-1'>Our staff will respect each client’s privacy.</div>
+      </div>
+
+      <div class='block'>
+        <div class='icon'><Award /></div>
+        <div class='text body-1'>Our staff will strive for excellence in their work.</div>
+      </div>
+
+      <div class='block'>
+        <div class='icon'><Check /></div>
+        <div class='text body-1'>Our staff will continuously adapt to improve the quality of care delivered.</div>
+      </div>
+
+    </div>
+
+    <a class='button-6' href='#'>Get quote</a>
+  </div>
+</div>
+
+<style lang='scss'>
+.why-partner-with-tlc-fourth {
+  background-color: #fff;
+  padding: 80px 0;
+
+  display: grid;
+  grid-template-columns: minmax(300px, 550px) minmax(530px, 1fr);
+  gap: 30px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .info {
+      color: var(--color-blue);
+      text-align: center;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;    
+    gap: 56px;
+
+    .title {
+      color: var(--color-blue);
+    }
+    
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: start;    
+      gap: 16px;
+
+      .block {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        align-items: center;
+        gap: 16px;
+
+        .icon {
+          width: 50px;
+          height: 50px;
+          border: 2px solid var(--color-green);
+          border-radius: 100%;
+          color: var(--color-green);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .text {
+          color: var(--color-gray);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    grid-template-columns: 1fr;
+    padding: 40px 0;
+
+    .right {
+      align-items: center;
+      gap: 24px;
+    }
+  }
+}
+</style>

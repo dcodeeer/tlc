@@ -1,0 +1,127 @@
+---
+import Hospital from '../../icons/hospital-mini.astro';
+
+---
+
+<div class='why-partner-with-tlc-third'>
+  <div class='container'>
+
+    <div class='list'>
+
+      <div class='block'>
+        <div class='top'>
+          <div class='icon'><Hospital /></div>
+          <div class='title H5'>Registered Nurses(RNs)</div>
+        </div>
+        <p class='body-2'>We have experienced registered nurses available to fill in the duties of RNs in your facility.</p>
+      </div>
+
+      <div class='block'>
+        <div class='top'>
+          <div class='icon'><Hospital /></div>
+          <div class='title H5'>Licensed Practicing Nurse(LPNs)</div>
+        </div>
+        <p class='body-2'>Our LPNs are professionals trained to care for the members of our community and meet your hiring needs.</p>
+      </div>
+
+      <div class='block'>
+        <div class='top'>
+          <div class='icon'><Hospital /></div>
+          <div class='title H5'>Licensed Nurses Aids(LNAs) ​</div>
+        </div>
+        <p class='body-2'>We have experienced licensed nurse’s aides in our pool, ready to be hired and begin serving patients.</p>
+      </div>
+
+      <div class='block'>
+        <div class='top'>
+          <div class='icon'><Hospital /></div>
+          <div class='title H5'>Personal Care Or Resident Care Attendants PCAs/RCAs</div>
+        </div>
+        <p class='body-2'>Our PCAs are the best in the business and are standing by to fill your facility’s healthcare needs.</p>
+      </div>  
+
+    </div>
+
+    <div class='info'>
+      <div class='left body-2'>
+        <p>TLC’s goal is to fully address the demands of healthcare services in the New England area. In order to do this, we find the best people to join our pool of over 300 healthcare professionals who are ready and qualified to fill staff vacancies. We do all the work of screening and certifying our applicants, so they are fully vetted before joining your team. </p>
+        <p>We also pride ourselves on high quality care with an in-house training staff that ensures consistent standards while providing a tailored approach. Our employees are part of our TLC family and we ensure all of their needs are met. All you have to do is contact us to speak to one of our dedicated staffing experts who are ready to serve you 24/7.</p>
+      </div>
+      <img src='/pictures/why-partner-with-tlc/3.png' />
+    </div>
+
+  </div>
+</div>
+
+<style lang='scss'>
+.why-partner-with-tlc-third {
+  background-color: #EEF5FF;
+  padding: 60px 0;
+
+  .container {
+    .list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 75px;
+
+      .block {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.03), 0px 1.22393px 11.42331px 0px rgba(0, 0, 0, 0.03), 0px 5.30368px 21.21471px 0px rgba(0, 0, 0, 0.02), 0px 11.83128px 29.37422px 0px rgba(0, 0, 0, 0.02), 0px 21.21471px 34.26992px 0px rgba(0, 0, 0, 0.01), 0px 33.65796px 37.53373px 0px rgba(0, 0, 0, 0.00);
+
+        padding: 35px 20px;
+
+        .top {
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          align-items: center;
+          gap: 16px;
+          margin-bottom: 16px;
+
+          .icon {
+            background-color: var(--color-green);
+            border-radius: 100%;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    padding: 40px 0;
+
+    .container {
+      .list {
+        margin-bottom: 32px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+</style>

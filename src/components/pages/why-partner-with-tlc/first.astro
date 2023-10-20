@@ -1,0 +1,81 @@
+---
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+
+---
+
+<div class='why-partner-with-tlc-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Healthcare Staffing</span>
+      <ChevronRightMini />
+      <span>Why Partner with TLC?</span>
+    </div>
+  </div>
+
+  <div class='slider' id='why-partner-with-tlc-page-slider'>
+    <div class='swiper-wrapper'>
+      <div class='swiper-slide'><img src='/pictures/main_page/0.png' /></div>
+      <div class='swiper-slide'><img src='/pictures/main_page/1.png' /></div>
+      <div class='swiper-slide'><img src='/pictures/main_page/2.png' /></div>
+      <div class='swiper-slide'><img src='/pictures/main_page/3.png' /></div>
+      <div class='swiper-slide'><img src='/pictures/main_page/4.png' /></div>
+      <div class='swiper-slide'><img src='/pictures/main_page/5.jpeg' /></div>
+    </div>
+    <div class='swiper-pagination' id='why-partner-with-tlc-page-slider-pagination'></div>
+  </div>
+</div>
+
+<style lang='scss'>
+.why-partner-with-tlc-first {
+
+  .slider {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    .swiper-wrapper {
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .slider {
+      height: 400px;
+
+      .swiper-wrapper {
+        .swiper-slide {
+          img {
+            object-position: 75%;
+          }
+        }
+      }
+    }
+  }
+}
+</style>
+
+<script is:inline>
+  const whyPartnerWithTlcPageSlider = new Swiper('#why-partner-with-tlc-page-slider', {
+		slidesPerView: 1,
+    pagination: {
+      el: '#why-partner-with-tlc-page-slider-pagination',
+      clickable: false,
+    },
+		loop: false, // true
+		effect: 'fade',
+		speed: 500,
+		autoplay: {
+			delay: 3000,
+		},
+		allowTouchMove: false,
+	});
+
+	whyPartnerWithTlcPageSlider.init();
+</script>

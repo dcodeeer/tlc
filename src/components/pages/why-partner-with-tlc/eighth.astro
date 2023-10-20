@@ -1,0 +1,75 @@
+<div class='why-partner-with-tlc-eighth container'>
+  <img src='/pictures/why-partner-with-tlc/8.png' />
+
+  <div class='right'>
+    <div class='title H2 blue'>Clinic Staffing Services</div>
+    <p class='body-2'>As Urgent Care and retail clinics continue to experience rapid growth, we can help adapt to changing staffing needs. When you partner with TLC Nursing Associates, you can leave the staffing to us so you can focus on providing quality care to your clients. Our experienced Nurses, Nursing Aids, Med-Techs and Phlebotomists are ready to provide a clinical setting that is efficient and professional. </p>
+    <div class='content'>
+      <div class='mini-title H4 blue'>We understand the unique requirements of clinical settings such as:</div>
+      <ul class='list body-2'>
+        <li>Flu clinics</li>
+        <li>Wellness clinics</li>
+        <li>Retail health clinics</li>
+        <li>Long-term Care Assessments</li>
+        <li>Rehab Assessments</li>
+        <li>Allied Health Settings</li>
+        <li>Any other professional clinical settings</li>
+      </ul>
+    </div>    
+  </div>
+</div>
+
+<style lang='scss'>
+.why-partner-with-tlc-eighth {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 30px;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .blue {
+      color: var(--color-blue);
+    }
+    .content {
+      .mini-title {
+        margin-bottom: 24px;
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        list-style-type: none;
+
+        li {
+          display: grid;
+          grid-template-columns: 10px 1fr;
+          gap: 16px;
+
+          &::before {
+            background-color: var(--color-gray);
+            opacity: 0.6;
+            content: '';
+            display: block;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin: 6px 10px 6px 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 0;
+  }
+}
+</style>

@@ -1,0 +1,74 @@
+<div class='why-partner-with-tlc-sixth container'>
+  <img src='/pictures/why-partner-with-tlc/6.png' />
+
+  <div class='right'>
+    <div class='title H2 blue'>Per Diem Staffing Services</div>
+    <p class='body-2'>Per Diem Staffing allows you to immediately fill gaps in your team without the expense of hiring permanent staff for something you know is short-term or sudden. If one of your current staff calls in sick, a client shows up with a particular condition needing high specialization, or any other last-minute staffing need, Per Diem Staffing is a good option for you. We can fill your short-term staffing needs with as little as a couple of hours notice!</p>
+    <div class='content'>
+      <div class='mini-title H4 blue'>Per Diem Staffing gives you flexibility:</div>
+      <ul class='list body-2'>
+        <li>Fill short-term gaps quickly with no commitment</li>
+        <li>Cover same-day shifts on short notice</li>
+        <li>Block booking (with advance notice)</li>
+        <li>Pay only for the hours you need</li>
+        <li>No worry over benefits or other employee expenses</li>
+        <li>TLC Standard of Care</li>
+      </ul>
+    </div>    
+  </div>
+</div>
+
+<style lang='scss'>
+.why-partner-with-tlc-sixth {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 30px;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .blue {
+      color: var(--color-blue);
+    }
+    .content {
+      .mini-title {
+        margin-bottom: 24px;
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        list-style-type: none;
+
+        li {
+          display: grid;
+          grid-template-columns: 10px 1fr;
+          gap: 16px;
+
+          &::before {
+            background-color: var(--color-gray);
+            opacity: 0.6;
+            content: '';
+            display: block;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin: 6px 10px 6px 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 0;
+  }
+}
+</style>
