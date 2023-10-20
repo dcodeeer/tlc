@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/main.astro';
+
+import First from '../components/pages/getting-started-with-tlc/first.astro';
+import Second from '../components/pages/getting-started-with-tlc/second.astro';
+import Third from '../components/pages/getting-started-with-tlc/third.astro';
+import Fourth from '../components/pages/getting-started-with-tlc/fourth.astro';
+import Fifth from '../components/pages/getting-started-with-tlc/fifth.astro';
+import WorkUs from '../components/global/work-us.astro';
+---
+
+<Layout>
+  <div class='getting-started-with-tlc'>
+    <First />
+    <Second />
+    <Third />
+    <Fourth />
+    <Fifth />
+    <div class='sixth'>
+      <WorkUs />
+    </div>
+  </div>
+</Layout>
+
+<style lang='scss'>
+  .getting-started-with-tlc {
+    .sixth {
+      padding: 65px 0;
+    }
+  }
+</style>
