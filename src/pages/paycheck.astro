@@ -1,0 +1,241 @@
+---
+import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
+import Layout from '../layouts/main.astro';
+---
+
+<Layout>
+  <div class='paycheck-page'>
+
+    <div class='page-info'>
+      <div class='text'>
+        <span>Discover TLC</span>
+        <ChevronRightMini />
+        <span>Team TLC</span>
+        <ChevronRightMini />
+        <span>Paycheck</span>
+      </div>
+    </div>
+
+    <div class='header'>
+      <div class='container'>
+        <div class='title H1'>Paycheck</div>
+        <div class='description body-1'>Please take a moment to register online and explore our new payroll site. You can now view your pay stubs, print them, request address changes, verify and change your tax status, add or remove direct deposit accounts, view and request earned time off online etc.</div>
+      </div>
+    </div>
+
+    <div class='first'>
+      <div class='container'>
+        <div class='video'>
+          <iframe  src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class='list body-1'>
+
+          <div class='item'>
+            <div class='number H4'>1</div>
+            <div class='content'>
+              <p>In order to begin, employees should access <a href='https://workforcenow.adp.com/public/index.htm' target='_blank'>https://workforcenow.adp.com/public/index.htm</a> and then click on <span class='blue'>Register Here</span> under the <span class='blue'>First Time User</span> section.</p>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='number H4'>2</div>
+            <div class='content'>
+              <p>Next, employees will need to enter <span class='blue'>tlcnursinc-ess</span> under the <span class='blue'>Registration Code</span>, then click <span class='blue'>Next</span> and confirm they do want to set up an account.</p>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='number H4'>3</div>
+            <div class='content'>
+              <span class='blue'>On the next page, employees should enter:</span>
+              <ol>
+                <li>First Name</li>
+                <li>Last Name</li>
+                <li>Check off the indicator next to SSN/EIN or ITIN, then enter SSN</li>
+                <li>Date of Birth</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='number H4'>4</div>
+            <div class='content'>
+              <p>After this, check off I Am Not A Robot then Confirm</p>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='number H4'>5</div>
+            <div class='content'>
+              <p>Next, employees will choose to either obtain a Personal Registration Code or indicate if they want to answer identity questions <span class='blue'>REGISTRATION PROCESS ( ACTION REQUIRED )</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class='bottom-text body-1'>As part of the registration process you will receive a <span class='blue'>Personal Registration Code ( PIC )</span>. This PIC Code will be required to complete the registration process. Your Personal Registration Code (PIC) is provided Separately (via e-mail)</div>
+
+        <div class='bottom-block'>
+          <div class='title H3 blue'>Registration Video:</div>
+          <a class='body-1' href='https://support.adp.com/netsecure/pages/pub/clientuser/3.0/ssr/ADP_Employee_Self_Service_Registration.htm'>https://support.adp.com/netsecure/pages/pub/clientuser/3.0/ssr/ADP_Employee_Self_Service_Registration.htm</a>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</Layout>
+
+<style lang='scss'>
+.paycheck-page {
+  background-color: #EEF5FF;
+
+  .header {
+    
+    .container {
+      color: var(--color-blue);
+      text-align: center;
+      padding: 70px 0 240px 0;
+
+      .title {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .first {
+    background-color: #fff;
+    padding: 50px 0;
+
+    .blue {
+      color: var(--color-blue);
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      .video {
+        background-color: var(--color-gray);
+        max-width: 890px;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        
+        border-radius: 14px;
+        overflow: hidden;
+
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: -240px;
+
+        position: relative;
+
+        iframe {
+          width: 100%;
+          aspect-ratio: 16 / 9;
+        }
+      }
+
+      .list {
+        width: 100%;
+        overflow-wrap: break-word;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        border-bottom: 1px solid #325C9B;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+
+        .item {
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          gap: 24px;
+
+          .number {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--color-blue);
+            border-radius: 100%;
+            color: var(--color-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .content {
+            display: inline-block;
+            word-break: break-word;
+            ol {
+              margin-left: 24px;
+            }
+          }
+        }
+      }
+
+      .bottom-text {
+        margin-bottom: 24px;
+      }
+      .bottom-block {
+        display: inline-block;
+        word-break: break-word;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .header {
+      .container {
+        padding: 65px 0;
+        text-align: start;
+        .title {
+          font-size: 28px;
+          text-align: center;
+        }
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+    .first {
+      .container {
+        .video {
+          margin-top: -90px;
+          margin-bottom: 40px;
+        }
+
+        .list {
+          .item {
+            font-size: 16px;
+            grid-template-columns: 32px 1fr;
+            gap: 8px;
+            .number {
+              width: 32px;
+              height: 32px;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .bottom-text {
+          font-size: 16px;
+        }
+
+        .bottom-block {
+          .title {
+            font-size: 28px;
+          }
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+</style>

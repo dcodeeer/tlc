@@ -137,7 +137,7 @@ import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
       background-color: var(--color-gray);
       max-width: 890px;
       width: 100%;
-      height: 500px;
+      aspect-ratio: 16 / 9;
       margin-top: -90px;
       border-radius: 14px;
       overflow: hidden;
@@ -146,10 +146,8 @@ import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
       position: relative;
 
       iframe {
-        position: absolute;
         width: 100%;
-        height: 100%;
-        left: 0;
+        aspect-ratio: 16 / 9;
       }
     }
   }
@@ -226,7 +224,6 @@ import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
     }
     .first {
       .video {
-        height: 250px;
       }
       .bottom {
         .H3 {
