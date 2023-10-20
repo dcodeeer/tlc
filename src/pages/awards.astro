@@ -1,0 +1,164 @@
+---
+import WorkUs from '../components/global/work-us.astro';
+import ArrowMoreLeft from '../components/icons/arrow-more-left.astro';
+import ArrowMoreRight from '../components/icons/arrow-more-right.astro';
+import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
+import Layout from '../layouts/main.astro';
+---
+
+<Layout>
+  <div class='awards-page'>
+
+    <div class='page-info'>
+      <div class='text'>
+        <span>Discover TLC</span>
+        <ChevronRightMini />
+        <span>Awards</span>
+      </div>
+    </div>
+
+    <div class='header'>
+      <div class='container'>
+        <div class='title H1'>Awards</div>
+        <div class='description body-1'>Award-Winning Business, Award-Winning Care With a mission focused on building relationships, it’s no wonder why we are the best in business of care! See why we’ve been the best in the business of staffing qualified caregivers for years running.</div>
+      </div>
+    </div>
+
+    <div class='first'>
+      <div class='container'>
+        <button id='awards-page-slider-left'><ArrowMoreLeft /></button>
+
+        <div class='slider' id='awards-page-slider'>
+
+          <div class='swiper-wrapper'>
+            <div class='swiper-slide'><img src='/pictures/awards/1.png' /></div>
+            <div class='swiper-slide'><img src='/pictures/awards/2.png' /></div>
+            <div class='swiper-slide'><img src='/pictures/awards/3.png' /></div>
+            <div class='swiper-slide'><img src='/pictures/awards/4.png' /></div>
+            <div class='swiper-slide'><img src='/pictures/awards/5.png' /></div>
+            <div class='swiper-slide'><img src='/pictures/awards/6.png' /></div>
+            <div class='swiper-slide'><img src='/pictures/awards/7.png' /></div>
+            <div class='swiper-slide'><img src='/pictures/awards/8.png' /></div>
+            <div class='swiper-slide'><img src='/pictures/awards/9.png' /></div>
+            <div class='swiper-slide'><img src='/pictures/awards/10.png' /></div>
+          </div>
+
+          <div class='pagination' id='awards-page-slider-pagination'></div>
+        </div>
+
+        <button id='awards-page-slider-right'><ArrowMoreRight /></button>
+      </div>
+    </div>
+
+    <div class='bottom'>
+      <WorkUs />
+    </div>
+
+  </div>
+</Layout>
+
+<style lang='scss'>
+.awards-page {
+  .header {
+    background-color: #EEF5FF;
+    padding: 80px 0 30px 0;
+    color: var(--color-blue);
+    text-align: center;
+
+    .title {
+      margin-bottom: 16px;
+    }
+  }
+
+  .first {
+    background-color: #F6F7F9;
+    padding: 55px 0;
+
+    .container {
+      max-width: 1350px + 120px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        .swiper-wrapper {
+          margin-bottom: 50px;
+
+          .swiper-slide {
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .pagination {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    padding: 65px 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    .header {
+      .title {
+        font-size: 28px;
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+
+    .first {
+      padding: 35px 0;
+      
+      .container {
+        .slider {
+          .swiper-wrapper {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+</style>
+
+<script is:inline>
+  const awardsPageSlider = new Swiper('#awards-page-slider', {
+    pagination: {
+      el: '#awards-page-slider-pagination',
+      clickable: true,
+    },
+    navigation: {
+      prevEl: '#awards-page-slider-left',
+      nextEl: '#awards-page-slider-right',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30
+      },
+      1100: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 30
+      },
+    },
+	});
+
+	awardsPageSlider.init();
+</script>
