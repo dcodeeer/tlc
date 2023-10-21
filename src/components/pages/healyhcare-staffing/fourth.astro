@@ -1,0 +1,95 @@
+<div class='healyhcare-staffing-fourth'>
+  <div class='container'>
+
+    <div class='title H1'>Our Travel Healthcare Staffing Agency Partner</div>
+    <p class='body-2'>TLC Nursing Associates, Inc. is based in South Burlington, Vermont.<br /> Our physical locations allow us to establish close relationships with healthcare facilities in our area and beyond. While our roots are in Vermont, our reach is spread throughout the New England area including New York, New Hampshire, Maine, and Massachusetts. Our proven capabilities and wide range of services have allowed us to grow and meet the needs of our clients throughout the region. Check out some of our partners below!</p>
+
+    <div class='partners'>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-1.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-2.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-3.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-4.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-5.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-6.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-7.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-8.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-9.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-10.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-11.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-12.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-13.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-14.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-15.png' /></div>
+      <div class='block'><img src='/pictures/healyhcare-staffing/partner-16.png' /></div>
+    </div>
+
+    <div class='title H2'>Also</div>
+    <ul class='list H5'>
+      <li>All Vermont State Correctional Facilities</li>
+      <li>Pillsbury Senior Communities</li>
+      <li>Rowan Court Health & Rehabilitation Center now Barre Gardens for Nursing and Rehabilitation</li>
+      <li>Burlington Health and Rehabilitation Center</li>
+      <li>Berlin Health and Rehabilitation Center</li>
+      <li>The Vermont Veterans Home</li>
+    </ul>
+  </div>
+</div>
+
+<style lang='scss'>
+.healyhcare-staffing-fourth {
+  background-color: #EEF5FF;
+  padding: 85px 0;
+
+  .container {
+    .title {
+      margin-bottom: 16px;
+    }
+
+    .partners {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 13px;
+
+      margin-top: 40px;
+      margin-bottom: 25px;
+
+      .block {
+        background-color: #fff;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      list-style-type: none;
+
+      li {
+        display: grid;
+        grid-template-columns: 10px 1fr;
+        gap: 16px;
+
+        &::before {
+          background-color: var(--color-gray);
+          opacity: 0.6;
+          content: '';
+          display: block;
+          position: relative;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          margin: 6px 10px 6px 0;
+        }
+      }
+    }
+  }
+}
+</style>

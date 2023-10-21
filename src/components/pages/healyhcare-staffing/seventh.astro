@@ -1,0 +1,79 @@
+<div class='healyhcare-staffing-seventh container'>
+  <div class='form'>
+    <div class='title H2'>Questions about staffing?</div>
+
+    <div class='inputs'>
+      <input class='body-2' type='text' placeholder='First name & last name*' />
+      <input class='body-2' type='text' placeholder='Email*' />
+      <input class='body-2' type='text' placeholder='Email' />
+      <input class='body-2' type='text' placeholder='Best time to reach You' />
+    </div>
+
+    <div class='bottom'>
+      <button>Submit</button>
+      <p class='body-3'>* - required field<br />& Get approved in 24 Hours!</p>
+    </div>
+  </div>
+</div>
+
+<style lang='scss'>
+.healyhcare-staffing-seventh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0;
+
+  .form {
+    max-width: 550px;
+    width: 100%;
+
+    border-radius: 18px;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 1.22393px 11.42331px 0px rgba(0, 0, 0, 0.05), 0px 5.30368px 21.21471px 0px rgba(0, 0, 0, 0.04), 0px 11.83128px 29.37422px 0px rgba(0, 0, 0, 0.03), 0px 21.21471px 34.26992px 0px rgba(0, 0, 0, 0.01), 0px 33.65796px 37.53373px 0px rgba(0, 0, 0, 0.00);
+    padding: 65px 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      input {
+        border-radius: 58px;
+        border: 1px solid rgba(114, 127, 153, 0.60);
+        padding: 10px 20px;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      button {
+        background-color: var(--color-green);
+        padding: 12px 60px;
+        border-radius: 27px;
+        color: #fff;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .form {
+      padding: 40px 30px;
+      .title {
+        font-size: 20px;
+      }
+      .bottom {
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+      }
+    }
+  }
+}
+</style>

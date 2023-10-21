@@ -1,0 +1,87 @@
+<div class='healyhcare-staffing-sixth'>
+  <div class='container'>
+    <img src='/pictures/healyhcare-staffing/6.png' />
+
+    <div class='right'>
+      <div class='H2 blue'>Our Services</div>
+      <p class='body-2'>TLC Nursing Associates, Inc. provides non-exclusive contracts giving you the flexibility to hire who you need when you need them. Our pool of over 300 qualified healthcare professionals come with a wide range of experiences in many different settings which allows us to meet the demand for quality care in our region. We provide placement of healthcare professionals for whatever your needs may be including in:1-888-414-0703 or fill out the request form below.</p>
+      <div class='H4 blue'>TLC allows you to:</div>
+      <ul class='list body-2'>
+        <li>Long-term Care Facilities</li>
+        <li>Sub-acute Facilities</li>
+        <li>Rehabilitation Centers</li>
+        <li>Correctional Facilities</li>
+        <li>Nursing Homes</li>
+        <li>Substitute Nurses in Public and Private Schools</li>
+        <li>Hospitals</li>
+        <li>Allied Health Settings</li>
+        <li>Clinics</li>
+        <li>Substance Abuse Recovery Clinics</li>
+        <li>Doctor’s Offices</li>
+        <li>Addiction Treatment Recovery Centers</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style lang='scss'>
+.healyhcare-staffing-sixth {
+  background-color: #EEF5FF;
+  padding: 100px 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: minmax(330px, 430px) 1fr;
+    gap: 30px;
+
+    .blue {
+      color: var(--color-blue);
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px;
+        list-style-type: none;
+
+        li {
+          display: grid;
+          grid-template-columns: 10px 1fr;
+          gap: 16px;
+
+          &::before {
+            background-color: var(--color-gray);
+            opacity: 0.6;
+            content: '';
+            display: block;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin: 6px 10px 6px 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    padding: 20px 0;
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      .right {
+        .list {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}
+</style>

@@ -1,0 +1,113 @@
+---
+import ArrowRight from '../../icons/arrow-right.astro';
+
+---
+
+<div class='healyhcare-staffing-third container'>
+  <img src='/pictures/healyhcare-staffing/3.png' />
+
+  <div class='info'>
+    <div class='title H4 blue'>Building relationships in our community is the foundation of our mission at TLC Nursing Associates, Inc.</div>
+    
+    <div class='description body-2'>
+      <p>We are nurse owned and operated with over 14 years of experience as a placement agency. Certified Nurses staff our leadership and operations teams, so we understand how to fill staffing needs in various healthcare settings because we have the personal experience of doing the job. </p>
+      <p>Our unique insight allows us to have a highly qualified team of healthcare professionals ready and trained to get the job done. With our flexible non-exclusive contracts, you can be confident that we have the best solutions for your needs whether they be short-term immediate assignments or something more permanent. Matching the best people with the right jobs is what we do.</p>
+      <p class='blue'>To fully address the demands of Home Health in Vermont and New Hampshire, our staff is made up of:</p>
+    </div>
+
+    <div class='list body-2'>
+
+      <div class='item'>
+        <div class='icon'><ArrowRight /></div>
+        <p>Registered Nurses (RNs)</p>
+      </div>
+
+      <div class='item'>
+        <div class='icon'><ArrowRight /></div>
+        <p>Licensed Practical Nurses (LPNs)</p>
+      </div>
+
+      <div class='item'>
+        <div class='icon'><ArrowRight /></div>
+        <p>Licensed Nursing Assistants (LNAs)/Certified Nurse Aids (CNAs)</p>
+      </div>
+
+      <div class='item'>
+        <div class='icon'><ArrowRight /></div>
+        <p>Personal Care Attendants (PCAs)</p>
+      </div>
+
+      <div class='item'>
+        <div class='icon'><ArrowRight /></div>
+        <p>Home Health Aid</p>
+      </div>
+
+      <div class='item'>
+        <div class='icon'><ArrowRight /></div>
+        <p>Caregivers</p>
+      </div>
+
+      <div class='item'>
+        <div class='icon'><ArrowRight /></div>
+        <p>Allied Healthcare Professionals</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style lang='scss'>
+.healyhcare-staffing-third {
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  gap: 30px;
+
+  padding: 75px 0;
+
+  .blue {
+    color: var(--color-blue);
+  }
+
+  img {
+    border-radius: 14px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .item {
+        display: grid;
+        grid-template-columns: 37px 1fr;
+        align-items: center;
+        gap: 20px;
+
+        .icon {
+          height: 37px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 0;
+  }
+}
+</style>

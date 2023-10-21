@@ -1,0 +1,68 @@
+<div class='healyhcare-staffing-fifth container'>
+  <div class='left'>
+    <div class='title H2'>Our Unique Tailored Approach</div>
+    <p class='body-2'>When you need a specific set of skills, our in-house training team ensures all our employees are up to date on their licensing requirements as well as certification in specific areas. Our very own TLC Academy is run with decades of experience providing leadership and training from our Nurse Educators. Our employees can feel confident that they the tools they need to step into their assignments and join your team seamlessly. Here are some of the trainings our Nurse Educators provide for our team of professionals:</p>
+    <ul class='list body-2'>
+      <li>All Vermont State Correctional Facilities</li>
+      <li>Pillsbury Senior Communities</li>
+      <li>Rowan Court Health & Rehabilitation Center now Barre Gardens for Nursing and Rehabilitation</li>
+      <li>Burlington Health and Rehabilitation Center</li>
+      <li>Berlin Health and Rehabilitation Center</li>
+      <li>The Vermont Veterans Home</li>
+    </ul>
+  </div>
+  <img src='/pictures/healyhcare-staffing/5.png' />
+</div>
+
+<style lang='scss'>
+.healyhcare-staffing-fifth {
+  display: grid;
+  grid-template-columns: 1fr minmax(330px, 430px);
+  gap: 80px;
+
+  padding: 120px 0;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .title {
+      color: var(--color-blue);
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      list-style-type: none;
+
+      li {
+        display: grid;
+        grid-template-columns: 10px 1fr;
+        gap: 16px;
+
+        &::before {
+          background-color: var(--color-gray);
+          opacity: 0.6;
+          content: '';
+          display: block;
+          position: relative;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          margin: 6px 10px 6px 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+
+    padding: 32px 0;
+  }
+}
+</style>
