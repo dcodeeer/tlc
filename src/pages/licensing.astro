@@ -3,6 +3,9 @@ import Layout from "../layouts/main.astro";
 import ChevronRightMini from "../components/icons/chevron-right-mini.astro";
 import Letters from "../components/pages/states/Letters.jsx";
 import Cards from "../components/pages/licensing/Cards";
+import WorkUs from "../components/global/work-us.astro";
+import ChevronLeftPagination from "../components/icons/chevron-left-pagination.astro";
+import ChevronRightPagination from "../components/icons/chevron-right-pagination.astro";
 ---
 
 <Layout>
@@ -41,6 +44,21 @@ import Cards from "../components/pages/licensing/Cards";
     <section class="cards">
       <div class="container">
         <Cards />
+        <div class="pagination">
+          <div class="wrapper">
+            <div class="item"><ChevronLeftPagination /></div>
+            <div class="item active">1</div>
+            <div class="item">2</div>
+            <div class="item">...</div>
+            <div class="item">8</div>
+            <div class="item"><ChevronRightPagination /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="container">
+        <WorkUs />
       </div>
     </section>
   </div>
@@ -143,6 +161,44 @@ Create an account and follow the instructions for CNA Certification by Endorseme
       border-bottom: 1px solid var(--color-gray);
       color: var(--color-blue);
     }
+  }
+
+  .pagination {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 auto;
+    }
+
+    .item {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:first-child {
+        border: 1px solid #e4e3e3;
+        border-radius: 100%;
+      }
+      &:last-child {
+        border: 1px solid #e4e3e3;
+        border-radius: 100%;
+      }
+    }
+
+    .active {
+      border-radius: 24px;
+      background: #eef5ff;
+    }
+  }
+  .work {
+    margin: 62px 0;
   }
 
   @media screen and (max-width: 580px) {
