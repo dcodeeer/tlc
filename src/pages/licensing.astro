@@ -1,0 +1,179 @@
+---
+import Layout from "../layouts/main.astro";
+import ChevronRightMini from "../components/icons/chevron-right-mini.astro";
+import Letters from "../components/pages/states/Letters.jsx";
+import Cards from "../components/pages/licensing/Cards";
+---
+
+<Layout>
+  <div class="licensing">
+    <div class="page-info">
+      <div class="text">
+        <span>Discover TLC</span>
+        <ChevronRightMini />
+        <span>Careers with TLC</span>
+        <ChevronRightMini />
+        <span>CNA/LNA Licensing</span>
+      </div>
+    </div>
+    <div class="main_banner">
+      <h1>How to Get Certified in the Other States as a Traveling CNA</h1>
+    </div>
+
+    <section class="firstly">
+      <div class="container">
+        <h3>How to Get Certified in the Other States as a Traveling CNA</h3>
+        <p>
+          Each state has its own rules and procedures when it comes to getting
+          licensed, but it doesn’t need to be confusing. Some are free, some
+          have fees attached, and some can be easily done online! The process of
+          getting your license transferred is called “Reciprocity” or
+          “Endorsement”.
+        </p>
+
+        <h4>
+          Find the state you are interested in below and click on the state name
+          to find the official state documents.
+        </h4>
+        <Letters />
+      </div>
+    </section>
+    <section class="cards">
+      <div class="container">
+        <Cards />
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script is:inline>
+addEventListener("DOMContentLoaded", (event) => {
+  jQuery(document).ready(function ($) {
+    $(".card a").click(function () {
+      $(".details").remove();
+
+      let index = parseInt($(this).closest(".card").data("index"));
+      let data = {
+        title: $(this).closest(".card").find("h4").text(),
+        text: $(this).closest(".card").find("p").text(),
+      };
+
+      let afterIndexAddObject = 0;
+      if (window.screen.width <= 580) {
+        renderDetails(index + 1, data);
+      } else if (window.screen.width > 580 && window.screen.width <= 968) {
+        renderDetails(index % 2 == 0 ? index + 2 : index + 1, data);
+      } else {
+        var res = index / 3;
+        if (res < 1) {
+          renderDetails(3, data);
+        } else if (res < 2) {
+          renderDetails(6, data);
+        } else if (res < 3) {
+          renderDetails(9, data);
+        }
+        // console.log(Math.round(res));
+
+        // console.log(index / 3);
+        // if (index == 0 || index == 1 || index == 2) {
+        //   afterIndexAddObject = index + 3;
+        // }
+      }
+    });
+
+    function renderDetails(index, data) {
+      $(`.card[data-index=${index - 1}]`)
+        .after(
+          `<div class='details'><h2>${data.title}</h2><h5>$10 – Online Portal</h5><div class="content"><p>CNA Endorsement Checklist – <a href="https://drive.google.com/file/d/1v6rBUcAfDI08Zmma1o5RegcNSHkmkmWW/view">https://drive.google.com/file/d/1v6rBUcAfDI08Zmma1o5RegcNSHkmkmWW/view</a>
+Create an account and follow the instructions for CNA Certification by Endorsement. An Application Specialist will review your application based on the information you supply. If your application isincomplete, you will be contacted via the email address you provided. To monitor the status of your application,visit Online Services: <a href="www.colorado.gov/dora/licensing/">www.colorado.gov/dora/licensing/</a></p></div></div>`
+        )
+        .fadeTo("slow");
+    }
+  });
+});
+</script>
+
+<style lang="scss">
+  .main_banner {
+    height: 250px;
+    background-color: #eef5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center;
+      color: var(--color-blue);
+    }
+  }
+
+  section.firstly {
+    margin: 48px 0 38px;
+    h3 {
+      color: var(--color-blue);
+      font-family: "Montserrat", sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      margin: 0 0 24px;
+    }
+
+    p {
+      font-family: "Mulish", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      margin: 0 0 24px;
+      color: var(--color-gray);
+    }
+
+    h4 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0 0 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--color-gray);
+      color: var(--color-blue);
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .main_banner {
+      height: 290px;
+      padding: 0 15px 55px 15px;
+      align-items: flex-end;
+
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+    }
+
+    section.firstly {
+      h3 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+      }
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+      }
+      h4 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+      }
+    }
+  }
+</style>
