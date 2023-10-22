@@ -1,0 +1,47 @@
+<div class='benefits-third container'>
+  <div class='left'>
+    <div class='title H3 blue'>Paid Time Off</div>
+    <p class='body-2'>Personal Time Off / Sick Time Rules: TLC Nursing’s Sick Time Rules are stipulated by the Commissioner of Labor pursuant to 21 V.S.A. § 487 and Act 69 of the 2016 General Assembly (“Act”). Copy of the regulation can be found at:
+      <a class='blue' href='#'>https://labor.vermont.gov/sites/labor/files/doc_library/Earned-Sick-Time-Rules.pdf</a></p>
+    <p class='body-2'>A newly hired employee. An employee begins accruing time on the first date of actual work. An employer may require a waiting period for a newly hired employee of up to one year. During this waiting period, an employee shall accrue earned sick time pursuant to the Act, but an employer may prohibit the use of earned sick time until after the employee has completed the waiting period.</p>
+    <p class='body-2'>As a travel staff, you will need to have continuously worked for TLC Nursing for a period of one year before using PTO/Sick Time. You may use any and all of your PTO/Sick Time after the one year. If you resign or complete a contract, but do not immediately start a new one, your sick time accrued and waiting period will reset if/when you rejoin the company and take a new contract.</p>
+    <p class='body-2'>PTO constitutes payment for the taxable hourly wage. GSA Per Diem meal allowance and housing stipend are NOT included in PTO pay.</p>
+  </div>
+  <img src='/pictures/benefits/third.png' />
+</div>
+
+<style lang='scss'>
+.benefits-third {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  padding: 65px 0;
+
+  .blue {
+    color: var(--color-blue);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    a {
+      display: inline-block;
+      word-break: break-word;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 40px 0;
+  }
+}
+</style>

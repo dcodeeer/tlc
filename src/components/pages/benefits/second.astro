@@ -1,0 +1,108 @@
+<div class='benefits-second container'>
+
+  <div class='block'>
+    <img src='/pictures/benefits/1.png' />
+    <div class='description H4'>Through this app, our employees can easily access their wages, manage finances, and purchase items/services online at any time.</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/2.png' />
+    <div class='description H4'>Great Pay Package. Best in the Industry!</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/3.png' />
+    <div class='description H4'>This is an Employee Assistance Program that offers counselling, financial and legal help, resources, and behavioral health services.</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/4.png' />
+    <div class='description H4'>Medical / Dental / Vision Insurance after 90 days of working at least 30 hours a week.!</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/5.png' />
+    <div class='description H4'>Great Referral Bonus! See below for details.</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/6.png' />
+    <div class='description H4'>Various money-saving discounts from National and Local retailers and service providerss</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/7.png' />
+    <div class='description H4'>24/7 access to a Nurse to support you in caring for your clients.</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/8.png' />
+    <div class='description H4'>Paid Time Off.</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/9.png' />
+    <div class='description H4'>401K with Employer match</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/10.png' />
+    <div class='description H4'>Group Aflac Insurance for Short Term Disability & other policies available for purchase at discounted rates</div>
+  </div>
+
+  <div class='block'>
+    <img src='/pictures/benefits/11.png' />
+    <div class='description H4'>Continuing Education available through Relias Learning</div>
+  </div>
+
+</div>
+
+<style lang='scss'>
+.benefits-second {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 30px;
+
+  padding: 80px 0 30px 0;
+
+  .block {
+    border-radius: 18px;
+    padding: 45px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 25px;
+
+    img {
+      height: 120px;
+    }
+
+    &:nth-child(1), &:nth-child(3), &:nth-child(4), &:nth-child(8), &:nth-child(10) {
+      background-color: #EEF5FF;
+    }
+
+    &:nth-child(2), &:nth-child(6), &:nth-child(9), &:nth-child(11) {
+      background-color: #E1F9F1;
+    }
+
+    &:nth-child(5), &:nth-child(7) {
+      background-color: #FFF2E6;
+    }
+
+    &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7) {
+      padding-top: 0;
+
+      img {
+        height: 180px;
+      }
+    }
+
+    &:nth-child(9), &:nth-child(11) {
+      img {
+        transform: rotate(10deg);
+      }
+    }
+  }
+}
+</style>

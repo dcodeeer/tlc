@@ -1,0 +1,45 @@
+---
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+---
+
+<div class='benefits-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Benefits</span>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='title H1'>Benefits</div>
+    <div class='description body-1'>Best in the Industry Pay Packages and other cool benefits</div>
+  </div>
+</div>
+
+<style lang='scss'>
+.benefits-first {
+  background-color: #EEF5FF;
+
+  .container {
+    padding: 100px 0 50px 0;
+    text-align: center;
+    color: var(--color-blue);
+
+    .title {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 100px 0;
+      .title {
+        font-size: 28px;
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+  }
+}
+</style>

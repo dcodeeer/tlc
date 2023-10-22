@@ -1,0 +1,33 @@
+---
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+---
+
+<div class='blog-article-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Blog</span>
+      <ChevronRightMini />
+      <span>Blog Article</span>
+    </div>
+  </div>
+  <img src='/pictures/blog-article/1.png' />
+</div>
+
+<style lang='scss'>
+.blog-article-first {
+  width: 100%;
+  height: 500px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 400px;
+  }
+}
+</style>

@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/main.astro';
+
+import First from '../components/pages/benefits/first.astro';
+import Second from '../components/pages/benefits/second.astro';
+import Third from '../components/pages/benefits/third.astro';
+import Fourth from '../components/pages/benefits/fourth.astro';
+import Fifth from '../components/pages/benefits/fifth.astro';
+import WorkUs from '../components/global/work-us.astro';
+---
+
+<Layout>
+  <div class='benefits-page'>
+    <First />
+    <Second />
+    <Third />
+    <Fourth />
+    <Fifth />
+    <div class='sixth'>
+      <WorkUs />
+    </div>
+  </div>
+</Layout>
+
+<style lang='scss'>
+.benefits-page {
+  .sixth {
+    padding: 0 0 65px 0;
+  }
+}
+</style>

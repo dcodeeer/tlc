@@ -1,0 +1,101 @@
+<div class='benefits-fourth'>
+  <div class='container'>
+
+    <div class='left'>
+      
+      <div class='top'>
+        <div class='title blue H4'>Bonus Amounts by Position</div>
+        <p class='body-2'>With our referral program, ambassadors (YOU) and applicants earn a bonus.</p>
+        <ul class='list body-2'>
+          <li>CNA/LNA/MHT/BHT/RA/PCA - $150 Ambassador / $100 for Applicants</li>
+          <li>LPN/LVN - $300 Ambassador / $200 Applicants</li>
+          <li>RN - $500 Ambassador / $250 Applicants</li>
+          <li>MD - $1000 Ambassador / $500 Applicants</li>
+        </ul>
+      </div>
+
+      <div class='bottom'>
+        <div class='title blue H4'>Referral Bonus Qualifications</div>
+        <ul class='list body-2'>
+          <li>The TLC Nursing Referral Bonus Program is effective February 1, 2023. All referrals submitted on or after this date are eligible for the referral bonus.</li>
+          <li>The person referred must be hired by TLC Nursing and work 520 hours for contract positions and 90 days for direct-hire roles to receive the referral bonus.</li>
+          <li>Active TLC Nursing employees and non-employees can participate in our bonus program.</li>
+          <li>Unlimited referral bonuses are allowed per Ambassador.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class='right'>
+      <div class='title blue H4'>Legal Policy</div>
+      <p class='body-2'>To qualify for the TLC Nursing Associates, Inc Referral Bonus Program, you can only refer a listed position for temporary staffing services or for permanent placement services.</p>
+      <p class='body-2'>Your referral(s) must be new and cannot have previously worked for TLC Nursing Associates, Inc; Your referral(s) must be hired by TLC Nursing and work a minimum of 520 hours for contract roles or 90-days for direct hire management/non-management roles to receive your referral bonus; Referral bonuses will be paid one time per referral; This program excludes any TLC Nursing Associates, Inc. employee whose work responsibilities include recruitment, hiring, or selection of new employees; Each referral is subject to a one-time payment, and the referred-candidate may not be referred an additional instance; Payment will be made directly to the employee’s currently indicated method of payment; Referral requests must be done on your own time and not as a part of your regular work duties; This program is strictly voluntary, and there is no obligation to participate or refer any candidate to the referral program; Referral program may be canceled at any time.</p>
+    </div>
+
+  </div>
+</div>
+
+<style lang='scss'>
+.benefits-fourth {
+  background-color: #EEF5FF;
+  padding: 60px 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    .blue {
+      color: var(--color-blue);
+    }
+
+    .left {
+      .top {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+      .bottom {
+        .title {
+          margin-bottom: 16px;
+        }
+      }
+      .list {
+        gap: 4px;
+        list-style-type: none;
+
+        li {
+          display: grid;
+          grid-template-columns: 10px 1fr;
+          gap: 16px;
+
+          &::before {
+            background-color: var(--color-gray);
+            opacity: 0.6;
+            content: '';
+            display: block;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin: 6px 10px 6px 0;
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    .container {
+      grid-template-columns: 1fr;
+    }    
+  }
+}
+</style>

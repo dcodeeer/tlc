@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/main.astro';
+
+import First from '../components/pages/blog-article/first.astro';
+import Second from '../components/pages/blog-article/second.astro';
+
+import WorkUs from '../components/global/work-us.astro';
+---
+
+<Layout>
+  <div class='blog-article'>
+
+    <First />
+    <Second />
+    <div class='third'>
+      <WorkUs />
+    </div>
+
+  </div>
+</Layout>
+
+<style lang='scss'>
+.blog-article {
+  .third {
+    padding: 65px 0;
+  }
+}
+</style>
