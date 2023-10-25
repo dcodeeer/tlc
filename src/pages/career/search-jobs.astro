@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/main.astro';
+
+import First from '../../components/pages/career-search-jobs/first.astro';
+import Second from '../../components/pages/career-search-jobs/second.astro';
+import Third from '../../components/pages/career-search-jobs/third.astro';
+import Fourth from '../../components/pages/career-search-jobs/fourth.astro';
+import Fifth from '../../components/pages/career-search-jobs/fifth.astro';
+import Sixth from '../../components/pages/career-search-jobs/sixth.astro';
+import Seventh from '../../components/pages/career-search-jobs/seventh.astro';
+import Eighth from '../../components/pages/career-search-jobs/eighth.astro';
+import Ninth from '../../components/pages/career-search-jobs/ninth.astro';
+import WorkUs from '../../components/global/work-us.astro';
+---
+
+<Layout>
+  <div class='career-search-jobs-page'>
+    <First />
+    <Second />
+    <Third />
+    <Fourth />
+    <Fifth />
+    <Sixth />
+    <Seventh />
+    <Eighth />
+    <Ninth />
+    <div class='tenth'>
+      <WorkUs />
+    </div>
+  </div>
+</Layout>
+
+<style lang='scss'>
+.career-search-jobs-page {
+  .tenth {
+    padding: 40px 0;
+  }
+}
+</style>

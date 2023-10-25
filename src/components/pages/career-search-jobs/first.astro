@@ -1,0 +1,33 @@
+---
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+---
+
+<div class='career-search-jobs-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Careers with TLC</span>
+      <ChevronRightMini />
+      <span>Search Jobs</span>
+    </div>
+  </div>
+  <img src='/pictures/main_page/0.png' />
+</div>
+
+<style lang='scss'>
+.career-search-jobs-first {
+  width: 100%;
+  height: 500px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 400px;
+  }
+}
+</style>
