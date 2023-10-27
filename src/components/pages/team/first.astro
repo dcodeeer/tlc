@@ -1,0 +1,47 @@
+---
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+---
+
+<div class='team-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Staff Testimonials</span>
+    </div>
+  </div>
+
+  <div class='container'>
+    <div class='H1'>Our team is our source of value</div>
+    <div class='body-1'>We appreciate each other’s expertise, build strong partnership relations, and care deeply about our work​</div>
+  </div>
+</div>
+
+<style lang='scss'>
+.team-first {
+  background-color: #EEF5FF;
+
+  .container {
+    padding: 120px 0 60px 0;
+    color: var(--color-blue);
+    text-align: center;
+
+    .H1 {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 80px 0 30px 0;
+
+     .H1 {
+        font-size: 28px;
+      }
+      .body-1 {
+        font-size: 16px;
+      }
+    }     
+  }
+}
+</style>

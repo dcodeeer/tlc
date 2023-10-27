@@ -76,7 +76,7 @@
 
     .bottom {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
       gap: 30px;
       align-items: center;
 
@@ -93,7 +93,13 @@
   }
 
   @media screen and (max-width: 912px) {
-    
+    grid-template-columns: 1fr;
+
+    .block {
+      .top {
+        max-width: 100%;
+      }
+    }
   }
 }
 </style>

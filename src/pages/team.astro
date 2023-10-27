@@ -1,25 +1,25 @@
 ---
 import Layout from '../layouts/main.astro';
 
-import First from '../components/pages/leap/first.astro';
-import Second from '../components/pages/leap/second.astro';
+import First from '../components/pages/team/first.astro';
+import Second from '../components/pages/team/second.astro';
 import WorkUs from '../components/global/work-us.astro';
 ---
 
 <Layout>
-  <div class='leap-page'>
-
+  <div class='team-page'>
     <First />
     <Second />
     <div class='third'>
       <WorkUs />
     </div>
-
   </div>
 </Layout>
 
 <style lang='scss'>
-.third {
-  padding: 65px 0;
+.team-page {
+  .third {
+    padding: 45px 0;
+  }
 }
 </style>
