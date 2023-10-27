@@ -29,6 +29,12 @@ button, input, select {
   line-height: 20px;
   color: var(--color-gray);
 }
+ul, ol {
+  margin-left: 16px;
+}
+input::placeholder {
+  opacity: 0.5;
+}
 button {
   cursor: pointer;
 }
@@ -223,8 +229,4 @@ body {
 
 
 
-@media screen and (max-width: 912px) {
-  .container {
-    // padding: 0 15px;
-  }
-}
+@media screen and (max-width: 912px) {}

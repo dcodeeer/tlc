@@ -216,35 +216,37 @@ import Layout from '../layouts/main.astro';
 </style>
 
 <script is:inline>
-  const faqPageAccordianListener = (e) => {
-    e.currentTarget.classList.toggle('faq-page-accordion-active');
+const faqPageAccordianListener = (e) => {
+  e.currentTarget.classList.toggle('faq-page-accordion-active');
 
-    const content = e.currentTarget.previousElementSibling.querySelector('.description');
+  const content = e.currentTarget.previousElementSibling.querySelector('.description');
 
-    content.classList.toggle('active');
-  };
-  
-  const faqPageAccordian = document.querySelectorAll('.faq-page-accordion[data-page="faq-page"]');
+  content.classList.toggle('active');
+};
 
-  faqPageAccordian[0].addEventListener('click', faqPageAccordianListener);
+const faqPageAccordian = document.querySelectorAll('.faq-page-accordion[data-page="faq-page"]');
+
+faqPageAccordian.forEach(e => {
+  e.addEventListener('click', faqPageAccordianListener);
+});
 
 
-  // slider
+// slider
 
-  const faqPageSlider = new Swiper('#faq-page-slider', {
-		slidesPerView: 1,
-    pagination: {
-      el: '#faq-page-slider-pagination',
-      clickable: false,
-    },
-		loop: false, // true
-		effect: 'fade',
-		speed: 500,
-		autoplay: {
-			delay: 3000,
-		},
-		allowTouchMove: false,
-	});
+const faqPageSlider = new Swiper('#faq-page-slider', {
+  slidesPerView: 1,
+  pagination: {
+    el: '#faq-page-slider-pagination',
+    clickable: false,
+  },
+  loop: false, // true
+  effect: 'fade',
+  speed: 500,
+  autoplay: {
+    delay: 3000,
+  },
+  allowTouchMove: false,
+});
 
-	faqPageSlider.init();
+faqPageSlider.init();
 </script>

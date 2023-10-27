@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/main.astro';
+
+import First from '../../components/pages/career-licensing/first.astro';
+import Second from '../../components/pages/career-licensing/second.astro';
+import Third from '../../components/pages/career-licensing/third.astro';
+import WorkUs from '../../components/global/work-us.astro';
+---
+
+<Layout>
+  <div class='career-licensing-page'>
+    <First />
+    <Second />
+    <Third />
+    <div class='fourth'>
+      <WorkUs />
+    </div>
+  </div>
+</Layout>
+
+<style lang='scss'>
+.career-licensing-page {
+  .fourth {
+    padding: 65px 0;
+  }
+}
+</style>

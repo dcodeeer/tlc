@@ -1,0 +1,73 @@
+---
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+import Search from '../../icons/search.astro';
+---
+
+<div class='career-licensing-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Careers with TLC</span>
+      <ChevronRightMini />
+      <span>LPN/RN Licensing</span>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='title H1'>Find More Travel Nursing Tips</div>
+    <div class='search-form'>
+      <input type='text' placeholder='Search' />
+      <button>
+        <div class='icon'><Search /></div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<style lang='scss'>
+.career-licensing-first {
+  background-color: #EEF5FF;
+
+  .container {
+    padding: 150px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .title {
+      color: var(--color-blue);
+      margin-bottom: 40px;
+    }
+
+    .search-form {
+      width: 100%;
+      display: flex;
+
+      input {
+        background-color: #fff;
+        width: 100%;
+        padding: 20px 40px;
+        border-radius: 10px 0 0 10px;
+      }
+      
+      button {
+        width: 60px;
+        height: 60px;
+        background-color: #E4E3E3;
+        border-radius: 0 10px 10px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 100px 0 60px 0;
+
+      .title {
+        font-size: 28px;
+      }
+    }    
+  }
+}
+</style>

@@ -1,0 +1,207 @@
+---
+import ChevronDown from '../../icons/chevron_down.astro';
+
+---
+
+<div class='career-licensing-third'>
+  <div class='container'>
+    <div class='title H1'>FAQs with Answers About Nursing License to Another State</div>
+    <div class='mini-title H3'>More Questions? Contact Us Today</div>
+    
+    <div class='list'>
+
+      <div class='accordion'>
+        <div class='accordion-content'>
+          <div class='number'>1.</div>
+          <div class='information'>
+            <div class='name'>Do I have to be licensed/certified in the state of the assignment to work there?</div>
+            <div class='description'><p>information</p></div>
+          </div>
+        </div>
+        <button class='faq-page-accordion' data-page='faq-page'><div class='icon'><ChevronDown /></div></button>
+      </div>
+
+      <div class='accordion'>
+        <div class='accordion-content'>
+          <div class='number'>2.</div>
+          <div class='information'>
+            <div class='name'>Does a Texas nursing license transfer from state to state?</div>
+            <div class='description'><p>information</p></div>
+          </div>
+        </div>
+        <button class='faq-page-accordion' data-page='faq-page'><div class='icon'><ChevronDown /></div></button>
+      </div>
+
+      <div class='accordion'>
+        <div class='accordion-content'>
+          <div class='number'>3.</div>
+          <div class='information'>
+            <div class='name'>Which state has the hardest NCLEX exam?</div>
+            <div class='description'><p>information</p></div>
+          </div>
+        </div>
+        <button class='faq-page-accordion' data-page='faq-page'><div class='icon'><ChevronDown /></div></button>
+      </div>
+
+      <div class='accordion'>
+        <div class='accordion-content'>
+          <div class='number'>4.</div>
+          <div class='information'>
+            <div class='name'>Is NY a compact state for nursing?</div>
+            <div class='description'><p>information</p></div>
+          </div>
+        </div>
+        <button class='faq-page-accordion' data-page='faq-page'><div class='icon'><ChevronDown /></div></button>
+      </div>
+
+      <div class='accordion'>
+        <div class='accordion-content'>
+          <div class='number'>5.</div>
+          <div class='information'>
+            <div class='name'>How much does it cost to transfer a nursing license to another state?</div>
+            <div class='description'><p>information</p></div>
+          </div>
+        </div>
+        <button class='faq-page-accordion' data-page='faq-page'><div class='icon'><ChevronDown /></div></button>
+      </div>
+
+      <div class='accordion'>
+        <div class='accordion-content'>
+          <div class='number'>6.</div>
+          <div class='information'>
+            <div class='name'>How long does it take to get a nursing license in another state?</div>
+            <div class='description'><p>information</p></div>
+          </div>
+        </div>
+        <button class='faq-page-accordion' data-page='faq-page'><div class='icon'><ChevronDown /></div></button>
+      </div>
+
+      <div class='accordion'>
+        <div class='accordion-content'>
+          <div class='number'>7.</div>
+          <div class='information'>
+            <div class='name'>How do I transfer my nursing license to North Carolina?</div>
+            <div class='description'><p>information</p></div>
+          </div>
+        </div>
+        <button class='faq-page-accordion' data-page='faq-page'><div class='icon'><ChevronDown /></div></button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<style lang='scss'>
+.career-licensing-third {
+  background-color: #F6F7F9;
+  padding: 100px 0;
+
+  .container {
+    .title {
+      margin-bottom: 17px;
+    }
+    .mini-title {
+      color: var(--color-blue);
+      margin-bottom: 72px;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .accordion {
+        display: grid;
+        grid-template-columns: 1fr 58px;
+
+        .accordion-content {
+          background-color: #fff;
+          padding: 18px 34px;
+          border-radius: 14px 0 0 14px;
+          display: flex;
+
+          .number {
+            font-size: 20px;
+            line-height: normal;
+            margin-right: 10px;
+          }
+
+          .information {
+            .name {
+              font-size: 20px;
+              line-height: normal;
+            }
+
+            .description {
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.35s ease-out;
+
+              p {
+                font-family: 'Mulish';
+                font-weight: 400;
+                padding: 16px 0;
+              }
+            }
+
+            .active {
+              max-height: 300px;
+            }
+          }
+        }
+
+        .faq-page-accordion {
+          background-color: #E4E3E3;
+          border-radius: 0 14px 14px 0;
+          color: #606C77;
+          transition: 0.35s;
+
+          .icon {
+            height: 24px;
+            transition: 0.35s;
+          }
+        }
+        .faq-page-accordion-active {
+          background-color: var(--color-blue);
+          color: #fff;
+
+          .icon {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 30px 0;
+
+    .container {
+      text-align: center;
+      .title {
+        font-size: 28px;
+      }
+      .mini-title {
+        font-size: 20px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+</style>
+
+<script is:inline>
+const faqPageAccordianListener = (e) => {
+  e.currentTarget.classList.toggle('faq-page-accordion-active');
+
+  const content = e.currentTarget.previousElementSibling.querySelector('.description');
+
+  content.classList.toggle('active');
+};
+
+const faqPageAccordian = document.querySelectorAll('.faq-page-accordion[data-page="faq-page"]');
+
+faqPageAccordian.forEach(e => {
+  e.addEventListener('click', faqPageAccordianListener);
+});
+</script>
