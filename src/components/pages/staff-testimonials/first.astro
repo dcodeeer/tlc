@@ -1,0 +1,48 @@
+---
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+---
+
+<div class='staff-testimonials-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Staff Testimonials</span>
+    </div>
+  </div>
+
+  <div class='container'>
+    <div class='H1'>See what travel RNs, travel LPNs, travel CNA, and travel Techs say about TLC Nursing</div>
+    <div class='body-1'>Joining TLC means joining a family. Your wellbeing is important to us and our clients. We hope that doing this important work brings you joy​</div>
+  </div>
+</div>
+
+<style lang='scss'>
+.staff-testimonials-first {
+  background-color: #EEF5FF;
+
+  .container {
+    padding: 120px 0 60px 0;
+    color: var(--color-blue);
+    text-align: center;
+
+    .H1 {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 80px 0 30px 0;
+      text-align: start;
+
+     .H1 {
+        font-size: 20px;
+      }
+      .body-1 {
+        font-size: 16px;
+      }
+    }     
+  }
+}
+</style>

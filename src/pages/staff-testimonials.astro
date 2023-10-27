@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/main.astro';
+
+import First from '../components/pages/staff-testimonials/first.astro';
+import Second from '../components/pages/staff-testimonials/second.astro';
+import Third from '../components/pages/staff-testimonials/third.astro';
+
+import WorkUs from '../components/global/work-us.astro';
+---
+
+<Layout>
+  <div class='staff-testimonials-page'>
+    <First />
+    <Second />
+    <Third />
+    <div class='fourth'>
+      <WorkUs />
+    </div>
+  </div>
+</Layout>
+
+<style lang='scss'>
+.staff-testimonials-page {
+  .fourth {
+    padding: 65px 0;
+  }
+}
+</style>
