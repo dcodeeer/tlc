@@ -1,0 +1,584 @@
+---
+import Cancel from '../../icons/cancel.astro';
+import LocationOutlined from '../../icons/location-outlined.astro';
+import Clock from '../../icons/clock.astro';
+import Dollar from '../../icons/dollar.astro';
+import Search from '../../icons/search.astro';
+import ChevronLeftPagination from '../../icons/chevron-left-pagination.astro';
+import ChevronRightPagination from '../../icons/chevron-right-pagination.astro';
+import Dropdown from '../../global/Dropdown';
+import Calendar from '../../icons/calendar.astro';
+
+---
+
+<div class='search-jobs-second container body-2'>
+  
+  <div class='top'>
+    <div class='left'>
+      <Dropdown
+        options={['first', 'second']}
+        round={true}
+        placeholder='Profession' />
+      <Dropdown
+        options={['first', 'second']}
+        round={true}
+        placeholder='Speciality' />
+
+      <Dropdown
+        options={['first', 'second']}
+        round={true}
+        placeholder='Job type' />
+
+      <Dropdown
+        options={['first', 'second']}
+        round={true}
+        placeholder='Location' />
+
+      <div class='input'>
+        <input class='body-2' type='text' placeholder='Start Date' />
+        <div class='icon'><Calendar /></div>
+      </div>
+    </div>
+    <div class='right'>
+      <button class='search button'>
+        <div class='icon'><Search /></div>
+        <span>Find Vacancies</span>
+      </button>
+      <button class='reset button-2'>Reset</button>
+    </div>
+  </div>
+
+  <div class='middle'>
+    <div class='enabled'>
+      <span>Enabled</span>
+      <div class='icon'><Cancel /></div>
+    </div>
+    <div class='clear'>
+      <span>Clear all</span>
+      <div class='icon'><Cancel /></div>
+    </div>
+  </div>
+
+  <div class='bottom'>
+
+    <div class='list'>
+
+      <div class='block'>
+        <img src='/pictures/search-jobs/2.jpeg' />
+        <div class='content body-2'>
+          <div class='H4 blue'>Registered Nurse (RN), Manager - Travel</div>
+
+          <div class='item'>
+            <div class='icon'><LocationOutlined /></div>
+            <span>Guttenberg, IA</span>
+          </div>
+          <div class='item b'>
+            <div class='icon'><Dollar /></div>
+            <span>Weekly Pay: $5838.30 - $6088.30</span>
+          </div>
+          <div class='item'>
+            <div class='icon'><Clock /></div>
+            <span>4x12 Nights</span>
+          </div>
+          <div class='item'>
+            <div class='icon'><Clock /></div>
+            <span>ASAP | 13 Week(s)</span>
+          </div>
+
+          <div class='buttons'>
+            <a class='H5 apply button-2' href='#'>Apply now</a>
+            <button class='H5 details button-2 deatils-open-button'>Details</button>
+          </div>
+        </div>
+        <div class='detail-info' style='display: none;'>
+          <div class='segment'>
+            <div class='mini-title'>Details</div>
+            <div class='H3 blue'>Registered Nurse (RN), Manager - Travel 1</div>
+          </div>
+  
+          <div class='segment'>
+            <div class='item'>
+              <div class='icon'><LocationOutlined /></div>
+              <span>Guttenberg, IA</span>
+            </div>
+            <div class='item b'>
+              <div class='icon'><Dollar /></div>
+              <span>Weekly Pay: $5838.30 - $6088.30</span>
+            </div>
+            <div class='item'>
+              <div class='icon'><Clock /></div>
+              <span>4x12 Nights</span>
+            </div>
+            <div class='item'>
+              <div class='icon'><Clock /></div>
+              <span>ASAP | 13 Week(s)</span>
+            </div>
+          </div>
+  
+          <div class='segment'>
+            <p>Start date - 09/11/2023</p>
+            <p>End date - 12/11/2023</p>
+            <p>Float Required - NO</p>
+            <p>Required Certifications for Submittal - N/A</p>
+          </div>
+  
+          <div class='segment'>
+            <div class='H5 blue'>Job Description</div>
+            <p>Certified Registered Nurse Anesthetists (CRNAs) are advanced practice registered nurses who specialize in providing anesthesia care to patients undergoing various medical procedures. They work in collaboration with healthcare teams, including surgeons, anesthesiologists, and other medical professionals, to ensure safe and effective anesthesia administration. Here are the key responsibilities and duties typically associated with the role of a CRNA: 1. Anesthesia Administration: CRNAs are responsible for administering anesthesia to patients before, during, and after surgical procedures. They assess patients' medical history, physical condition, and other relevant factors to determine the appropriate anesthesia plan. CRNAs monitor patients' vital signs, adjust anesthesia levels as needed, and manage pain during and after procedures. </p>
+          </div>
+  
+          <a class='H5 apply button-2' href='#'>Apply now</a>
+  
+        </div>
+      </div>
+
+      <div class='block'>
+        <img src='/pictures/search-jobs/2.jpeg' />
+        <div class='content body-2'>
+          <div class='H4 blue'>Registered Nurse (RN), Manager - Travel</div>
+
+          <div class='item'>
+            <div class='icon'><LocationOutlined /></div>
+            <span>Guttenberg, IA</span>
+          </div>
+          <div class='item b'>
+            <div class='icon'><Dollar /></div>
+            <span>Weekly Pay: $5838.30 - $6088.30</span>
+          </div>
+          <div class='item'>
+            <div class='icon'><Clock /></div>
+            <span>4x12 Nights</span>
+          </div>
+          <div class='item'>
+            <div class='icon'><Clock /></div>
+            <span>ASAP | 13 Week(s)</span>
+          </div>
+
+          <div class='buttons'>
+            <a class='H5 apply button-2' href='#'>Apply now</a>
+            <button class='H5 details button-2 deatils-open-button'>Details</button>
+          </div>
+        </div>
+        <div class='detail-info' style='display: none;'>
+          <div class='segment'>
+            <div class='mini-title'>Details</div>
+            <div class='H3 blue'>Registered Nurse (RN), Manager - Travel 2</div>
+          </div>
+  
+          <div class='segment'>
+            <div class='item'>
+              <div class='icon'><LocationOutlined /></div>
+              <span>Guttenberg, IA</span>
+            </div>
+            <div class='item b'>
+              <div class='icon'><Dollar /></div>
+              <span>Weekly Pay: $5838.30 - $6088.30</span>
+            </div>
+            <div class='item'>
+              <div class='icon'><Clock /></div>
+              <span>4x12 Nights</span>
+            </div>
+            <div class='item'>
+              <div class='icon'><Clock /></div>
+              <span>ASAP | 13 Week(s)</span>
+            </div>
+          </div>
+  
+          <div class='segment'>
+            <p>Start date - 09/11/2023</p>
+            <p>End date - 12/11/2023</p>
+            <p>Float Required - NO</p>
+            <p>Required Certifications for Submittal - N/A</p>
+          </div>
+  
+          <div class='segment'>
+            <div class='H5 blue'>Job Description</div>
+            <p>Certified Registered Nurse Anesthetists (CRNAs) are advanced practice registered nurses who specialize in providing anesthesia care to patients undergoing various medical procedures. They work in collaboration with healthcare teams, including surgeons, anesthesiologists, and other medical professionals, to ensure safe and effective anesthesia administration. Here are the key responsibilities and duties typically associated with the role of a CRNA: 1. Anesthesia Administration: CRNAs are responsible for administering anesthesia to patients before, during, and after surgical procedures. They assess patients' medical history, physical condition, and other relevant factors to determine the appropriate anesthesia plan. CRNAs monitor patients' vital signs, adjust anesthesia levels as needed, and manage pain during and after procedures. </p>
+          </div>
+  
+          <a class='H5 apply button-2' href='#'>Apply now</a>
+  
+        </div>
+      </div>
+
+    </div>
+
+    <div class='box' id='right-box'>
+      <form id='search-jobs-from'>
+        <div class='H3'>Create Job Alert</div>
+        <input class='body-2' type='text' placeholder='Email*' />
+        <input class='body-2' type='text' placeholder='Speciality' />
+        <div class='row'>
+          <div>You'll get emails</div>
+          <select>
+            <option>wasd</option>
+          </select>
+        </div>
+        <div class='bot'>
+          <button class='button'>Create</button>
+          <p class='body-3'>* - required field</p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class='page-pagination'>
+    <div class='wrapper'>
+      <div class='item'><ChevronLeftPagination /></div>
+      <div class='item active'>1</div>
+      <div class='item'>2</div>
+      <div class='item'>...</div>
+      <div class='item'>8</div>
+      <div class='item'><ChevronRightPagination /></div>
+    </div>
+  </div>
+
+  <form id='search-jobs-from-two'>
+    <div class='H3'>Create Job Alert</div>
+    <input class='body-2' type='text' placeholder='Email*' />
+    <input class='body-2' type='text' placeholder='Speciality' />
+    <div class='row'>
+      <div>You'll get emails</div>
+      <select>
+        <option>wasd</option>
+      </select>
+    </div>
+    <div class='bot'>
+      <button class='button'>Create</button>
+      <p class='body-3'>* - required field</p>
+    </div>
+  </form>
+
+</div>
+
+<style lang='scss'>
+.search-jobs-second {
+  padding: 50px 0;
+
+  .blue {
+    color: var(--color-blue);
+  }
+  .b {
+    font-weight: 600;
+  }
+
+  .detail-info {
+    background-color: #F6F7F9;
+    padding: 60px 30px;
+    border: 1px solid var(--color-blue);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+
+    .mini-title {
+      display: inline-block;
+      background-color: #fff;
+      border-left: 3px solid var(--color-blue);
+      padding: 3px 9px;
+      margin-bottom: 6px;
+    }
+
+    div.H5 {
+      margin-bottom: 24px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      margin-bottom: 2px;
+
+      .icon {
+        height: 24px;
+      }
+    }
+
+    .apply {
+      padding: 10px 22px;
+    }
+  }
+
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    align-items: start;
+    gap: 30px;
+
+    margin-bottom: 55px;
+
+    .left {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+      row-gap: 10px;
+
+      .input {
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid rgba(114, 127, 153, 0.50);
+        height: 41px;
+        padding: 0 13px 0 20px;
+        appearance: none;
+
+        input {
+          width: 100%;
+        }
+        .icon {
+          height: 30px;
+        }
+      }
+    }
+
+    .right {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 8px;
+      
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        .icon {
+          height: 15px;
+        }
+      }
+    }
+  }
+
+  .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    .enabled {
+      display: flex;
+      align-items: center;
+      padding: 6px 12px;
+
+      border-radius: 8px;
+      border: 1px solid var(--gray-medium, #E4E3E3);
+      background: var(--gray-light, #F6F7F9);
+
+      .icon {
+        height: 30px;
+      }
+    }
+
+    .clear {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        height: 30px;
+      }
+    }
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .block {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .content {
+          border-top: 1px solid var(--color-blue);
+          border-bottom: 1px solid var(--color-blue);
+          border-right: 1px solid var(--color-blue);
+          border-radius: 0 8px 8px 0;
+          padding: 20px 30px 20px 20px;
+
+          .H4 {
+            margin-bottom: 10px;
+          }
+
+          .item {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            margin-bottom: 2px;
+
+            .icon {
+              height: 24px;
+            }
+          }
+
+          .buttons {
+            display: flex;
+            margin-top: 24px;
+
+            .apply, .details {
+              padding: 10px 22px;
+            }
+            .apply {
+              display: block;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      form {
+        background-color: #fff;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 1.22393px 11.42331px 0px rgba(0, 0, 0, 0.05), 0px 5.30368px 21.21471px 0px rgba(0, 0, 0, 0.04), 0px 11.83128px 29.37422px 0px rgba(0, 0, 0, 0.03), 0px 21.21471px 34.26992px 0px rgba(0, 0, 0, 0.01), 0px 33.65796px 37.53373px 0px rgba(0, 0, 0, 0.00);
+        border-radius: 8px;
+        padding: 40px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        input {
+          width: 100%;
+          border-radius: 58px;
+          border: 1px solid rgba(114, 127, 153, 0.60);
+          padding: 10px 20px;
+        }
+
+        .row {
+          display: flex;
+          align-items: center;
+        }
+
+        .bot {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  #search-jobs-from-two {
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 1.22393px 11.42331px 0px rgba(0, 0, 0, 0.05), 0px 5.30368px 21.21471px 0px rgba(0, 0, 0, 0.04), 0px 11.83128px 29.37422px 0px rgba(0, 0, 0, 0.03), 0px 21.21471px 34.26992px 0px rgba(0, 0, 0, 0.01), 0px 33.65796px 37.53373px 0px rgba(0, 0, 0, 0.00);
+    border-radius: 8px;
+    padding: 40px;
+
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+
+    input {
+      width: 100%;
+      border-radius: 58px;
+      border: 1px solid rgba(114, 127, 153, 0.60);
+      padding: 10px 20px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .bot {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .top {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    .top {
+      .left {
+        grid-template-columns: 1fr;
+      }
+    }
+    .bottom {
+      grid-template-columns: 1fr;
+
+      .box {
+        display: none;
+      }
+    }
+
+    .page-pagination {
+      margin-bottom: 42px;
+    }
+
+    #search-jobs-from-two {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .bottom {
+      .list {
+        .block {
+          grid-template-columns: 1fr;
+
+          img {
+            height: 140px;
+          }
+
+          .content {
+            border-top: none;
+            border-left: 1px solid var(--color-blue);
+            border-radius: 0 0 8px 8px;
+          }
+        }
+      }
+    }
+  }
+}
+</style>
+
+<script is:inline>
+const detailOpenListener = (e) => {
+  const toHides = document.querySelectorAll('.toHide');
+  toHides.forEach(e => e.remove())
+
+  const newElem = e.currentTarget.parentElement.parentElement.parentElement.querySelector('.detail-info').cloneNode(true);
+  newElem.removeAttribute('style');
+  newElem.classList.add('toHide');
+
+  if (window.innerWidth > 912) {
+    const box = document.querySelector('#right-box');
+    box.insertBefore(newElem, document.querySelector('#search-jobs-from'));
+  } else {
+    const box = e.currentTarget.parentElement.parentElement.parentElement.parentElement;
+    box.insertBefore(newElem, e.currentTarget.parentElement.parentElement.parentElement.nextSibling);
+  }
+  
+};
+
+const details = document.querySelectorAll('.deatils-open-button');
+details.forEach(e => e.addEventListener('click', detailOpenListener))
+</script>

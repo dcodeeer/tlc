@@ -145,6 +145,21 @@ body {
   }
 }
 
+.button-2 {
+  border: 1px solid var(--color-blue);
+  border-radius: 86px;
+  color: var(--color-blue);
+  transition: 0.35s;
+
+  &:hover {
+    background-color: #90C3FF;
+  }
+
+  &:active {
+    border: 1px solid #0E70E3;
+  }
+}
+
 .button-6 {
   border: 1px solid var(--color-green);
   border-radius: 86px;
@@ -157,7 +172,7 @@ body {
   }
 
   &:active {
-    border: 1px solid var(--Hover-filed-green, rgba(21, 209, 153, 0.15));
+    border: 1px solid rgba(21, 209, 153, 0.15);
   }
 }
 
@@ -230,3 +245,121 @@ body {
 
 
 @media screen and (max-width: 912px) {}
+
+
+
+
+.dropdown {
+  position: relative;
+
+  &.rounded {
+    input {
+      border-radius: 69px;
+    }
+  }
+
+  &.smoothed {
+    input {
+      border-radius: 8px;
+    }
+  }
+
+  input {
+    margin: 0 !important;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .dropdown_items {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 350ms;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: #fff;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 1.22393px 11.42331px 0px rgba(0, 0, 0, 0.05), 0px 5.30368px 21.21471px 0px rgba(0, 0, 0, 0.04), 0px 11.83128px 29.37422px 0px rgba(0, 0, 0, 0.03), 0px 21.21471px 34.26992px 0px rgba(0, 0, 0, 0.01), 0px 33.65796px 37.53373px 0px rgba(0, 0, 0, 0.00);
+
+    li {
+      height: 40px;
+      padding: 0 20px;
+      color: var(--color-gray);
+      font-family: 'Mulish', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #E4E3E3;
+      cursor: pointer;
+      transition: 350ms;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        color: var(--color-blue)
+      }
+    }
+  }
+
+  input {
+    transition: 350ms;
+    padding: 10px 20px;
+    border-radius: 58px;
+    border: 1px solid rgba(114, 127, 153, 0.6);
+    font-family: "Mulish";
+    font-weight: 400;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .inside {
+    position: relative;
+    svg {
+      transition: 350ms;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+    }
+  }
+
+  &.active {
+    input {
+      border-color: var(--color-gray);
+    }
+
+    .inside {
+      svg {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
+    .dropdown_items {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+    }
+    
+  }
+}
+
+.search-jobs-page {
+  .dropdown {
+    input {
+      border-radius: 8px;
+    }
+  }
+}

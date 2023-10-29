@@ -1,0 +1,48 @@
+---
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+
+---
+
+<div class='search-jobs-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Careers with TLC</span>
+      <ChevronRightMini />
+      <span>Search Jobs</span>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='H1'>Join the TLC Nursing Family!</div>
+    <p class='body-1'>TLC Nursing offers an unparalleled opportunity to elevate your healthcare career under the guidance and leadership of a Registered Nurse.  With us, you are not just part of a team, but a member of the TLC Nursing family.</p>
+  </div>
+</div>
+
+<style lang='scss'>
+.search-jobs-first {
+  background-color: #EEF5FF;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 90px 0 70px 0;
+
+    color: var(--color-blue);
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 100px 0 30px 0;
+
+      .H1 {
+        font-size: 28px;
+      }
+      .body-1 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+</style>
