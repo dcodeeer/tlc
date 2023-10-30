@@ -170,7 +170,6 @@ import TwitterMini from '../icons/twitter-mini.astro';
         <div class='item'>
           <div class='title'>
             <a href='/contact'>Contact</a>
-            <button class='header-mobile-chevron'><ChevronDown /></button>
           </div>
         </div>
 
@@ -258,7 +257,7 @@ header {
           margin-top: 25px;
           width: 1070px;
           height: 260px;
-          position: fixed;
+          position: absolute;
           left: 0;
           right: 0;
           margin: 25px auto;
@@ -284,6 +283,13 @@ header {
               display: flex;
               flex-direction: column;
               gap: 5px;
+
+              a {
+                transition: 0.35s;
+                &:hover {
+                  color: var(--color-blue);
+                }
+              }
             }
           }
           .right {
@@ -293,11 +299,22 @@ header {
 
             .box {
               display: grid;
-              grid-template-columns: 120px 1fr;
+              grid-template-columns: 140px 1fr;
               gap: 64px;
 
+              .partner {
+                .name {
+                  color: var(--color-blue);
+                }
+
+                img {
+                  width: 115px;
+                  margin-bottom: 5px;
+                }
+              }
+
               img {
-                width: 115px;
+                
               }
 
               p {

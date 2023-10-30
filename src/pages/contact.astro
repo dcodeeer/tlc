@@ -10,6 +10,7 @@ import TwitterIcon from '../components/icons/twitter.astro';
 import PlayGoogle from '../components/icons/play-google.astro';
 import AppleStore from '../components/icons/apple-store.astro';
 import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
+import Dropdown from '../components/global/Dropdown';
 ---
 
 <Layout>
@@ -38,10 +39,10 @@ import ChevronRightMini from '../components/icons/chevron-right-mini.astro';
 				<input type='text' placeholder='First name & last name*' />
 				<input type='text' placeholder='Email*' />
 				<input type='text' placeholder='Phone' />
-				<select>
-					<option>Call Me</option>
-					<option>Send Me</option>
-				</select>
+				<Dropdown
+					options={['Call Me', 'Send Me']}
+					round={true}
+					placeholder='Select' />
 				<input type='text' placeholder='Message' />
 
 				<div class='bottom'>

@@ -97,22 +97,33 @@ addEventListener("DOMContentLoaded", (event) => {
         //   afterIndexAddObject = index + 3;
         // }
       }
+
+      $(".details .close").click(function () {
+      console.log('wasd')
+      $(".details").remove();
+    });
     });
 
     function renderDetails(index, data) {
       $(`.card[data-index=${index - 1}]`)
         .after(
-          `<div class='details'><h2>${data.title}</h2><h5>$10 – Online Portal</h5><div class="content"><p>CNA Endorsement Checklist – <a href="https://drive.google.com/file/d/1v6rBUcAfDI08Zmma1o5RegcNSHkmkmWW/view">https://drive.google.com/file/d/1v6rBUcAfDI08Zmma1o5RegcNSHkmkmWW/view</a>
+          `<div class='details'>
+
+            <div class='close'>X</div>
+
+            <h2>${data.title}</h2><h5>$10 – Online Portal</h5><div class="content"><p>CNA Endorsement Checklist – <a href="https://drive.google.com/file/d/1v6rBUcAfDI08Zmma1o5RegcNSHkmkmWW/view">https://drive.google.com/file/d/1v6rBUcAfDI08Zmma1o5RegcNSHkmkmWW/view</a>
 Create an account and follow the instructions for CNA Certification by Endorsement. An Application Specialist will review your application based on the information you supply. If your application isincomplete, you will be contacted via the email address you provided. To monitor the status of your application,visit Online Services: <a href="www.colorado.gov/dora/licensing/">www.colorado.gov/dora/licensing/</a></p></div></div>`
         )
         .fadeTo("slow");
     }
   });
 });
+
 </script>
 
 <style lang="scss">
   .main_banner {
+    word-break: break-word;
     height: 250px;
     background-color: #eef5ff;
     display: flex;

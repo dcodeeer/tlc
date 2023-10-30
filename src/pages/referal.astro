@@ -387,6 +387,16 @@ import WorkUs from "../components/global/work-us.astro";
         justify-content: center;
         border: none;
         color: #fff;
+        transition: 0.35s;
+        border: 1px solid transparent;
+
+        &:hover {
+          background-color: #61E3BC;
+        }
+
+        &:active {
+          border: 1px solid #15D199;
+        }
       }
 
       a {
@@ -409,8 +419,7 @@ import WorkUs from "../components/global/work-us.astro";
   @media screen and (max-width: 580px) {
     .main_banner {
       height: 290px;
-      padding: 0 15px 55px 15px;
-      align-items: flex-end;
+      align-items: center;
 
       h1 {
         font-size: 28px;

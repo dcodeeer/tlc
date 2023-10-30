@@ -14,7 +14,9 @@ import ChevronRightMini from '../../icons/chevron-right-mini.astro';
     </div>
   </div>
 
-  <div class='slider' id='why-partner-with-tlc-page-slider'>
+  <img src='/pictures/main_page/0.png' />
+
+  <!--<div class='slider' id='why-partner-with-tlc-page-slider'>
     <div class='swiper-wrapper'>
       <div class='swiper-slide'><img src='/pictures/main_page/0.png' /></div>
       <div class='swiper-slide'><img src='/pictures/main_page/1.png' /></div>
@@ -24,12 +26,12 @@ import ChevronRightMini from '../../icons/chevron-right-mini.astro';
       <div class='swiper-slide'><img src='/pictures/main_page/5.jpeg' /></div>
     </div>
     <div class='swiper-pagination' id='why-partner-with-tlc-page-slider-pagination'></div>
-  </div>
+  </div> -->
 </div>
 
 <style lang='scss'>
 .why-partner-with-tlc-first {
-
+  height: 500px;
   .slider {
     width: 100%;
     height: 500px;
@@ -44,8 +46,19 @@ import ChevronRightMini from '../../icons/chevron-right-mini.astro';
       }
     }
   }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   @media screen and (max-width: 480px) {
+    height: 400px;
+
+    img {
+            object-position: 80%;
+          }
     .slider {
       height: 400px;
 

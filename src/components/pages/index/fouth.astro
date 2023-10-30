@@ -35,7 +35,7 @@ import TalkingIcon from '../../icons/talking.astro';
         </div>
 
         <div class='block'>
-          <NursingCareIcon />
+          <img src='/pictures/main_page/nursing-care-icon.png' />
           <div class='text'>Physical Therapist (PT) Occupational Therapist (OT)</div>
         </div>
 
@@ -62,7 +62,7 @@ import TalkingIcon from '../../icons/talking.astro';
       </div>
     </div>
 
-    <img src='/pictures/main_page/fouth/img-main-2.jpeg' />
+    <img class='image' src='/pictures/main_page/fouth/img-main-2.jpeg' />
 
   </div>
 
@@ -98,7 +98,7 @@ import TalkingIcon from '../../icons/talking.astro';
       gap: 70px;
       margin-bottom: 50px;
 
-      img {
+      .image {
         max-width: 460px;
         width: 100%;
         height: 470px;
@@ -126,6 +126,12 @@ import TalkingIcon from '../../icons/talking.astro';
             padding: 16px 16px 50px 16px;
             position: relative;
 
+            img {
+              width: 50px;
+              height: 50px;
+              object-fit: cover;
+            }
+
             &:nth-child(-n+4) {
               border-bottom: 1px solid var(--color-gray);
             }
@@ -139,7 +145,7 @@ import TalkingIcon from '../../icons/talking.astro';
               display: block;
               background-color: var(--color-gray);
               width: 1px;
-              height: 130px;
+              height: 70%;
               right: -16px;
               position: absolute;
             }
@@ -166,7 +172,7 @@ import TalkingIcon from '../../icons/talking.astro';
         gap: 30px;
         margin-bottom: 30px;
 
-        img {
+        .image {
           height: 470px;
           width: 100%;
           max-width: 100%;
@@ -184,6 +190,7 @@ import TalkingIcon from '../../icons/talking.astro';
             grid-template-columns: 1fr 1fr;
 
             .block {
+
               &:nth-child(-n+6) {
                 border-bottom: 1px solid var(--color-gray);
               }
@@ -195,7 +202,7 @@ import TalkingIcon from '../../icons/talking.astro';
                 display: block;
                 background-color: var(--color-gray);
                 width: 1px;
-                height: 130px;
+                height: 70%;
                 right: -16px;
                 position: absolute;
               }

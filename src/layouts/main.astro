@@ -4,6 +4,7 @@ import "../assets/styles/main.scss";
 
 import Header from "../components/global/Header.astro";
 import Footer from "../components/global/Footer.astro";
+import BackToTop from '../components/global/back-to-top.astro';
 ---
 
 <html lang="en">
@@ -36,6 +37,7 @@ import Footer from "../components/global/Footer.astro";
     <Header />
     <slot />
     <Footer />
+    <BackToTop />
 
     <script is:inline>
       $('.dropdown').click(function() {
