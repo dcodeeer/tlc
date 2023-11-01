@@ -32,6 +32,16 @@ import BackToTop from '../components/global/back-to-top.astro';
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       is:inline></script>
+
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      is:inline></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"
+      is:inline></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      is:inline></script>
   </head>
   <body>
     <Header />
@@ -49,5 +59,6 @@ import BackToTop from '../components/global/back-to-top.astro';
         })
       })
     </script>
+    <script src="/scripts/animation.js" is:inline></script>
   </body>
 </html>
