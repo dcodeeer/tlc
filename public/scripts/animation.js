@@ -79,6 +79,24 @@ gsap.fromTo(
   { y: 0, opacity: 1, delay: indexThird.delay},
 );
 
+const thirdItems = document.querySelectorAll(".index-page .third .number");
+gsap.from(thirdItems, {
+  textContent: 0,
+  duration: 4,
+  ease: "power1.in",
+  snap: { textContent: 1 },
+  stagger: {
+    each: 1.0,
+    onUpdate: function() {
+      this.targets()[0].innerHTML = numberWithCommas(Math.ceil(this.targets()[0].textContent));
+    },
+  }
+});
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "");
+}
+
 
 // index fouth
 const indexFouth = {};
