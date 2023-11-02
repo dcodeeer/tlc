@@ -4,6 +4,9 @@ gsap.registerPlugin(ScrollToPlugin)
 // global 
 // gsap.fromTo('header', { y: -100, opacity: 0 }, { y: 0, opacity: 1 });
 
+gsap.fromTo('.animate-header', { opacity: 0 },  { opacity: 1, delay: 0.5 });
+gsap.fromTo('.animate-content', { y: 200, opacity: 0 },  { y: 0, opacity: 1, delay: 0.5 });
+
 // index
 
 // index first
@@ -79,7 +82,7 @@ gsap.fromTo(
   { y: 0, opacity: 1, delay: indexThird.delay},
 );
 
-const thirdItems = document.querySelectorAll(".index-page .third .number");
+const thirdItems = document.querySelectorAll('.index-page .third .number');
 gsap.from(thirdItems, {
   textContent: 0,
   duration: 4,
