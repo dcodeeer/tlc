@@ -10,7 +10,7 @@ import Layout from '../layouts/main.astro';
 <Layout>
   <div class='faq-page'>
 
-    <div class='header'>
+    <div class='header animate-header'>
 
       <div class='page-info'>
         <div class='text'>
@@ -34,32 +34,34 @@ import Layout from '../layouts/main.astro';
 
     </div>
 
-    <div class='content container'>
-      <div class='title'>More Questions? Contact Us Today</div>
-
-      <div class='list'>
-
-        <div class='accordion'>
-          <div class='accordion-content'>
-            <div class='number'>1.</div>
-            <div class='information'>
-              <div class='name'>Do I have to be licensed/certified in the state of the assignment to work there?</div>
-              <div class='description '>
-                <p>Yes, you do. The application process for most states is fairly simple and straightforward – you can easily search for and find the information for a particular state online.</p>
+    <div class='animate-content'>
+      <div class='content container'>
+        <div class='title'>More Questions? Contact Us Today</div>
+  
+        <div class='list'>
+  
+          <div class='accordion'>
+            <div class='accordion-content'>
+              <div class='number'>1.</div>
+              <div class='information'>
+                <div class='name'>Do I have to be licensed/certified in the state of the assignment to work there?</div>
+                <div class='description '>
+                  <p>Yes, you do. The application process for most states is fairly simple and straightforward – you can easily search for and find the information for a particular state online.</p>
+                </div>
               </div>
             </div>
+            <button class='faq-page-accordion' data-page='faq-page'>
+              <div class='icon'><ChevronDown /></div>
+            </button>
           </div>
-          <button class='faq-page-accordion' data-page='faq-page'>
-            <div class='icon'><ChevronDown /></div>
-          </button>
+  
         </div>
-
+  
       </div>
-
-    </div>
-
-    <div class='bottom'>
-      <WorkUs />
+  
+      <div class='bottom'>
+        <WorkUs />
+      </div>
     </div>
 
   </div>

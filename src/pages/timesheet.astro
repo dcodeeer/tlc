@@ -5,38 +5,42 @@ import ChevronRightMini from "../components/icons/chevron-right-mini.astro";
 
 <Layout>
   <div class="timescheet">
-    <div class="page-info">
-      <div class="text">
-        <span>Discover TLC</span>
-        <ChevronRightMini />
-        <span>Team TLC</span>
-        <ChevronRightMini />
-        <span>Timecheet</span>
+    <div class='animate-header'>
+      <div class="page-info">
+        <div class="text">
+          <span>Discover TLC</span>
+          <ChevronRightMini />
+          <span>Team TLC</span>
+          <ChevronRightMini />
+          <span>Timecheet</span>
+        </div>
       </div>
-    </div>
-    <div class="main_banner">
-      <h1>How To Complete Your LEAP Timesheet</h1>
-      <p>How to complete your LEAP Timesheet video</p>
+      <div class="main_banner">
+        <h1>How To Complete Your LEAP Timesheet</h1>
+        <p>How to complete your LEAP Timesheet video</p>
+      </div>
     </div>
 
-    <section class="video">
-      <div class="container">
-        <iframe
-          src="https://www.youtube.com/embed/B7HIhmjPJ1Q?si=Zpw2Pk2PUWRRCXc4&controls=0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-    </section>
-    <section class="document">
-      <div class="container">
-        <iframe
-          src="https://www.tlcnursing.com/wp-content/uploads/2023/02/Employee-Handbook-TLC-Nursing.pdf"
-          frameborder="0"
-          allowfullscreen></iframe>
-      </div>
-    </section>
+    <div class='animate-content'>
+      <section class="video">
+        <div class="container">
+          <iframe
+            src="https://www.youtube.com/embed/B7HIhmjPJ1Q?si=Zpw2Pk2PUWRRCXc4&controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="document">
+        <div class="container">
+          <iframe
+            src="https://www.tlcnursing.com/wp-content/uploads/2023/02/Employee-Handbook-TLC-Nursing.pdf"
+            frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+    </div>
   </div>
 </Layout>
 

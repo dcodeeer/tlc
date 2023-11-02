@@ -11,45 +11,49 @@ import ChevronRightPagination from '../components/icons/chevron-right-pagination
 <Layout>
   <div class='blog-page'>
 
-    <div class='page-info'>
-      <div class='text'>
-        <span>Discover TLC</span>
-        <ChevronRightMini />
-        <span>Blog</span>
+    <div class='animate-header'>
+      <div class='page-info'>
+        <div class='text'>
+          <span>Discover TLC</span>
+          <ChevronRightMini />
+          <span>Blog</span>
+        </div>
       </div>
-    </div>
-  
-    <div class='header'>
-      <div class='container'>
-        <div class='title H1'>Discover Valuable Travel Nursing Tips With Our Blog Search</div>
-        <div class='description body-1'>Explore the TLC Nursing’s blog to stay up-to-date on the latest news, tips, and insights related to travel nursing.</div>
-        <div class='form'>
-          <input type='text' placeholder='Search for articles' />
-          <button>
-            <div class='icon'><Search /></div>
-          </button>
+    
+      <div class='header'>
+        <div class='container'>
+          <div class='title H1'>Discover Valuable Travel Nursing Tips With Our Blog Search</div>
+          <div class='description body-1'>Explore the TLC Nursing’s blog to stay up-to-date on the latest news, tips, and insights related to travel nursing.</div>
+          <div class='form'>
+            <input type='text' placeholder='Search for articles' />
+            <button>
+              <div class='icon'><Search /></div>
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class='box container'>
-      <div class='title H1'>All Articles</div>
-      <div class='list'>
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-      </div>
-      <div class='page-pagination'>
-        <div class='wrapper'>
-          <div class='item'><ChevronLeftPagination /></div>
-          <div class='item active'>1</div>
-          <div class='item'>2</div>
-          <div class='item'>...</div>
-          <div class='item'>8</div>
-          <div class='item'><ChevronRightPagination /></div>
+    <div class='animate-content'>
+      <div class='box container'>
+        <div class='title H1'>All Articles</div>
+        <div class='list'>
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+        </div>
+        <div class='page-pagination'>
+          <div class='wrapper'>
+            <div class='item'><ChevronLeftPagination /></div>
+            <div class='item active'>1</div>
+            <div class='item'>2</div>
+            <div class='item'>...</div>
+            <div class='item'>8</div>
+            <div class='item'><ChevronRightPagination /></div>
+          </div>
         </div>
       </div>
     </div>
