@@ -1,0 +1,278 @@
+---
+import Dropdown from '../../global/Dropdown';
+import ChevronRightMini from '../../icons/chevron-right-mini.astro';
+import Policy from '../../icons/policy.astro';
+
+---
+
+<div class='signup-page-first'>
+  <div class='page-info'>
+    <div class='text'>
+      <span>Discover TLC</span>
+      <ChevronRightMini />
+      <span>Registration</span>
+    </div>
+  </div>
+
+  <div class='header'>
+
+    <div class='top'>
+      <div class='title H0'>Let’s Get Started</div>
+    </div>
+
+    <div class='slider' id='signup-first-slider'>
+      <div class='swiper-wrapper'>
+  
+        <div class='swiper-slide'><img src='/pictures/main_page/0.png' /></div>
+        <div class='swiper-slide'><img src='/pictures/main_page/1.png' /></div>
+        <div class='swiper-slide'><img src='/pictures/main_page/2.png' /></div>
+        <div class='swiper-slide'><img src='/pictures/main_page/3.png' /></div>
+        <div class='swiper-slide'><img src='/pictures/main_page/4.png' /></div>
+        <div class='swiper-slide'><img src='/pictures/main_page/5.jpeg' /></div>
+  
+      </div>
+      <div class='swiper-pagination' id='main-first-slider-pagination'></div>
+    </div>
+  </div>
+
+  <div class='content'>
+    <form>
+      <div class='top'>
+        <div class='title H3'>Register and build your dream career with Us!</div>
+        <p class='body-2'>Fill out a simple form, and we'll get in touch to provide you with personalized loan program assistance.</p>
+      </div>
+  
+      <div class='mid'>
+        
+        <div class='input'>
+          <label class='body-3'>First name*</label>
+          <input class='body-2' type='text' placeholder='First name' />
+        </div>
+
+        <div class='input'>
+          <label class='body-3'>First name*</label>
+          <input class='body-2' type='text' placeholder='First name' />
+        </div>
+
+        <div class='input'>
+          <label class='body-3'>First name*</label>
+          <Dropdown options={['First', 'Second']} round={true} placeholder='Choose' />
+        </div>
+
+        <div class='input'>
+          <label class='body-3'>First name*</label>
+          <Dropdown options={['First', 'Second']} round={true} placeholder='Choose' />
+        </div>
+
+        <div class='input'>
+          <label class='body-3'>First name*</label>
+          <Dropdown options={['First', 'Second']} round={true} placeholder='Choose' />
+        </div>
+
+        <div class='input'>
+          <label class='body-3'>First name*</label>
+          <Dropdown options={['First', 'Second']} round={true} placeholder='Choose' />
+        </div>
+
+        <div class='input'>
+          <label class='body-3'>First name*</label>
+          <Dropdown options={['First', 'Second']} round={true} placeholder='Choose' />
+        </div>
+
+        <div class='policy'>
+          <div class='icon'><Policy /></div>
+          <p class='body-3'>By clicking "Submit", you acknowledge TLC will collect and use the personal information you provide in accordance with its Privacy Policy and Terms of Use and that you have read and agree to be bound by these policies. You also agree to receive emails, automated text messages and phone calls from or on behalf of TLC about employment opportunities, positions in which you have been placed, and your employment with TLC.</p>
+        </div>
+  
+      </div>
+  
+      <div class='bot'>
+        <button class='button-3'>Submit</button>
+        <div class='H5'>
+          <span>Already have an account?</span>
+          <a href='#'>Log in here.</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<style lang='scss'>
+.signup-page-first {
+  .header {
+    position: relative;
+    .top {
+      width: 100%;
+      height: 500px;
+      position: absolute;
+      z-index: 99;
+
+      .title {
+        max-width: 1180px;
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        color: #fff;
+      }
+    }
+
+    .slider {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .swiper-pagination {
+        justify-content: center;
+        margin-bottom: 125px;
+      }
+    }
+  }
+
+  .content {
+    padding: 65px 0;
+
+    form {
+      max-width: 1180px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 20px;
+      margin: -170px auto 0 auto;
+      padding: 60px 80px;
+      z-index: 2;
+      position: relative;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.03), 0px 1.22393px 11.42331px 0px rgba(0, 0, 0, 0.03), 0px 5.30368px 21.21471px 0px rgba(0, 0, 0, 0.02), 0px 11.83128px 29.37422px 0px rgba(0, 0, 0, 0.02), 0px 21.21471px 34.26992px 0px rgba(0, 0, 0, 0.01), 0px 33.65796px 37.53373px 0px rgba(0, 0, 0, 0.00);
+
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .top {
+        .title {
+          color: var(--color-blue);
+          margin-bottom: 8px;
+        }
+      }
+
+      .mid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap: 30px;
+        row-gap: 17px;
+
+        .policy {
+          grid-column: 1/-1;
+          display: grid;
+          grid-template-columns: 24px 1fr;
+          gap: 8px;
+        }
+
+        .input {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          input {
+            border: 1px solid rgba(114, 127, 153, 0.6);
+            padding: 10px 20px;
+            border-radius: 69px;
+            height: 41.6px;
+          }
+        }
+      }
+
+      .bot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        button {
+          width: 180px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    .header {
+      .top {
+        padding: 0 20px;
+        .H0 {
+          font-size: 45px;
+        }
+      }
+    }
+    .content {
+      padding: 65px 20px;
+      form {
+        padding: 30px;
+        margin: -170px 0 0 0;
+      }
+    }    
+  }
+
+  @media screen and (max-width: 700px) {
+    .content {
+      form {
+        .bot {
+          flex-direction: column;
+          gap: 10px;
+
+          .H5 {
+            a {
+              color: var(--color-green);
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }    
+  }
+
+  @media screen and (max-width: 480px) {
+    .content {
+      form {
+        .bot {
+          flex-direction: column;
+          gap: 10px;
+
+          .H5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }   
+  }
+}
+</style>
+
+<script is:inline>
+	const slider = new Swiper('#signup-first-slider', {
+		slidesPerView: 1,
+    pagination: {
+      el: '#main-first-slider-pagination',
+      clickable: true,
+    },
+		loop: false,
+		effect: 'fade',
+		speed: 500,
+		autoplay: {
+			delay: 3000,
+		},
+		allowTouchMove: false,
+	});
+
+	slider.init();
+</script>
